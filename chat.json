@@ -118,5 +118,13 @@
         "source": "tool:GenerateImageAndPlaceInComponent",
         "content": "Okay, I'm adding an image of a banana in the center of the header.",
         "metadata": {}
+    },
+    {
+        "id": "fad91397-6196-4298-afb7-f4abde41ad04",
+        "timestamp": "2024-11-20T15:58:31.128119Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a smart contract with staking capabilities",
+        "metadata": {}
     }
 ]
