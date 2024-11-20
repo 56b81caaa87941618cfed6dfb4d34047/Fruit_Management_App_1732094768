@@ -46,5 +46,20 @@
         "source": "web_client",
         "content": "do it at Hero1732094771",
         "metadata": {}
+    },
+    {
+        "id": "f7e3310e-f886-406e-9c34-c237bc7728fd",
+        "timestamp": "2024-11-20T09:31:56.779734Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_u1jymy9EPRnoM4rTvFXJjIqA",
+            "function": {
+                "arguments": "{\"component_id\":\"Hero1732094771\",\"change_description\":\"Added a form for choosing a favorite fruit.\",\"acknowledgement_message\":\"The Hero component has been updated with a form for choosing your favorite fruit.\"}",
+                "name": "EditFrontendComponent"
+            },
+            "type": "function"
+        }
     }
 ]
