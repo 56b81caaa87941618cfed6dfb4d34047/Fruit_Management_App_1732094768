@@ -22,5 +22,13 @@
         "source": "web_client",
         "content": "add a title that says WAA",
         "metadata": {}
+    },
+    {
+        "id": "06cfd7c7-bab0-4b3b-9b56-f775116c4a0b",
+        "timestamp": "2024-11-20T09:56:14.473973Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "add a title that says WAA",
+        "metadata": {}
     }
 ]
