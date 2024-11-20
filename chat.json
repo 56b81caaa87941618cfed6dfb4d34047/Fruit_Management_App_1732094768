@@ -22,5 +22,13 @@
         "source": "base_assistant",
         "content": "The current components in your app are `Hero1732094771`, `Header1732094771`, and `Footer1732094771`. What would you like to do with them?",
         "metadata": {}
+    },
+    {
+        "id": "651a7db9-f61c-4ef0-af10-6daa40b110b1",
+        "timestamp": "2024-11-20T09:31:24.998641Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "in the Hero1732094771, add a forms for choosing your favourite fruit",
+        "metadata": {}
     }
 ]
