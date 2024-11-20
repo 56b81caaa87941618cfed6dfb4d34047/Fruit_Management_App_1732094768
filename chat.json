@@ -95,5 +95,20 @@
         "source": "web_client",
         "content": "now, there should be 1 image added with a banana in the background",
         "metadata": {}
+    },
+    {
+        "id": "df08d0d7-bc27-423d-97c9-1c5e9b24ef0b",
+        "timestamp": "2024-11-20T09:41:32.933066Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_bNGjej4bSEfjEPIfDD82WMs6",
+            "function": {
+                "arguments": "{\"component_id\":\"Hero1732094771\",\"image_gen_prompt\":\"A beautiful banana in a tropical setting, vibrant colors, suitable for a website background.\",\"placement_instructions\":\"Set as the background of the hero section.\",\"acknowledgement_message\":\"A banana image has been added to the background of the Hero component.\"}",
+                "name": "GenerateImageAndPlaceInComponent"
+            },
+            "type": "function"
+        }
     }
 ]
