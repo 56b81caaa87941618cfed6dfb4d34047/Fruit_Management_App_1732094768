@@ -1,0 +1,23 @@
+{
+    "name": "example",
+    "prefix": "%#PLACEHOLDER",
+    "placeholderMappings": {
+        "Header": [
+            "APPLICATION_NAME"
+        ],
+        "Hero": [
+            "HERO_HEADING_TEXT",
+            "HERO_SUBHEADING_TEXT"
+        ],
+        "Footer": [
+            "APPLICATION_NAME",
+            "FOOTER_TEXT"
+        ]
+    },
+    "placeholders": {
+        "APPLICATION_NAME": "FruitTracker Pro",
+        "HERO_HEADING_TEXT": "Revolutionize Your Fruit Inventory Management",
+        "HERO_SUBHEADING_TEXT": "Effortlessly track, organize, and optimize your fruit stock with our intuitive app",
+        "FOOTER_TEXT": "\u00a9 2023 FruitTracker Pro. Keeping your fruits fresh and your business fruitful."
+    }
+}
