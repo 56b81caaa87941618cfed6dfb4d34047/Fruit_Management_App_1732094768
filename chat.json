@@ -87,5 +87,13 @@
         "source": "base_assistant",
         "content": "I've added the title \"WAA\" to the header component. If you need anything else, just let me know!",
         "metadata": {}
+    },
+    {
+        "id": "2191c4b1-0387-4184-9aae-a5927536ea7c",
+        "timestamp": "2024-11-20T09:57:50.814657Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "add an image of a banana in the center",
+        "metadata": {}
     }
 ]
