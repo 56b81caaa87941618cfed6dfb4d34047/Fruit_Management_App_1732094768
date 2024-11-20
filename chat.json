@@ -95,5 +95,20 @@
         "source": "web_client",
         "content": "add an image of a banana in the center",
         "metadata": {}
+    },
+    {
+        "id": "2d305e1d-03c3-4aa1-bd92-7d3e1ecfb771",
+        "timestamp": "2024-11-20T09:57:53.921877Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_Vk6zsUHdl5PKM2XZ7MVdgq6Y",
+            "function": {
+                "arguments": "{\"component_id\":\"Header1732094771\",\"image_gen_prompt\":\"a banana\",\"placement_instructions\":\"place it in the center of the header\",\"acknowledgement_message\":\"Okay, I'm adding an image of a banana in the center of the header.\"}",
+                "name": "GenerateImageAndPlaceInComponent"
+            },
+            "type": "function"
+        }
     }
 ]
