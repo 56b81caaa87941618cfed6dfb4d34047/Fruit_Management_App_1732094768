@@ -38,5 +38,13 @@
         "source": "base_assistant",
         "content": "You'll need to go to the \"Components\" tab and drag and drop the form component into the `Hero1732094771` on the canvas. Once you've added it, let me know if you need help with any specific configurations!",
         "metadata": {}
+    },
+    {
+        "id": "4bc7d3d8-9bcf-40ab-9a6e-240a498401db",
+        "timestamp": "2024-11-20T09:31:54.076497Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "do it at Hero1732094771",
+        "metadata": {}
     }
 ]
