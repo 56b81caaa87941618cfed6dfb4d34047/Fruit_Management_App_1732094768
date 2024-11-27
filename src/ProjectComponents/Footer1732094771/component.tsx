@@ -13,8 +13,9 @@ const Footer: React.FC = () => {
           </div>
 
           {/* IMAGE */}
+          {/* IMAGE */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0 flex justify-center">
-            <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Fruit_Management_App_1732094768/main/src/assets/images/f2a6e59fc4f54f1c8e42d997e04f2bb6.jpeg" alt="Footer Image" className="max-w-full h-auto" />
+            <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Fruit_Management_App_1732094768/main/src/assets/images/0bd1a497ab04459d887c23a4f50d6d9a.jpeg" alt="Footer Image" className="max-w-full h-auto" />
           </div>
 
           {/* SOCIALS */}
