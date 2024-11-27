@@ -124,5 +124,15 @@
         "source": "base_assistant",
         "content": "The image has been set as the background of the header. What would you like to do next?",
         "metadata": {}
+    },
+    {
+        "id": "347fdea9-d733-45c7-ab46-d2f174f29ad5",
+        "timestamp": "2024-11-27T17:37:13.586553Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "now in the footer, and image really bloody of a war",
+        "metadata": {
+            "component_id": "Footer1732094771"
+        }
     }
 ]
