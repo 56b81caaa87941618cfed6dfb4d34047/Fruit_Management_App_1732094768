@@ -12,6 +12,8 @@ const Hero: React.FC = () => {
     <div className="bg-black py-16 text-white w-full h-full">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center h-full">
         <div className="md:w-1/2 mb-8 md:mb-0">
+          <img src="https://raw.githubusercontent.com/56b81caaa87941618cfed6dfb4d34047/Fruit_Management_App_1732094768/main/src/assets/images/f2a6e59fc4f54f1c8e42d997e04f2bb6.jpeg" alt="Hero Image" className="w-full h-auto rounded-lg shadow-md mb-4" />
+        <div className="md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-4xl font-bold mb-4">Revolutionize Your Fruit Inventory Management</h1>
           <p className="text-xl mb-6">Effortlessly track, organize, and optimize your fruit stock with our intuitive app</p>
         </div>
