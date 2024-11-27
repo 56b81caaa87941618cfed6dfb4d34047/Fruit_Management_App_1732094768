@@ -280,5 +280,15 @@
         "source": "base_assistant",
         "content": "The image has been added to the hero section. What would you like to do next?",
         "metadata": {}
+    },
+    {
+        "id": "17a09615-b225-48f4-bb5f-88afb55161b4",
+        "timestamp": "2024-11-27T17:49:25.911165Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "asdasdasdasd add the image to the hero",
+        "metadata": {
+            "component_id": "Header1732094771"
+        }
     }
 ]
