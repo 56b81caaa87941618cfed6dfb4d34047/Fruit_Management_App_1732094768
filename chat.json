@@ -24,5 +24,13 @@
         "source": "base_assistant",
         "content": "Sure thing! Where would you like this image of an apple placed in your footer component?",
         "metadata": {}
+    },
+    {
+        "id": "4124cbb9-6a11-4135-bab4-78b65759cec5",
+        "timestamp": "2024-11-27T17:24:21.138692Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "in the middle",
+        "metadata": {}
     }
 ]
