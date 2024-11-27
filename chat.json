@@ -229,5 +229,15 @@
         "source": "base_assistant",
         "content": "I'm unable to proceed with generating or displaying violent content. How else can I assist you with your app?",
         "metadata": {}
+    },
+    {
+        "id": "6f902d54-a71c-4c00-a83e-13c1a9af207f",
+        "timestamp": "2024-11-27T17:49:01.171774Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "f2a6e59fc4f54f1c8e4 add the image to the hero",
+        "metadata": {
+            "component_id": "Header1732094771"
+        }
     }
 ]
