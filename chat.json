@@ -32,5 +32,20 @@
         "source": "web_client",
         "content": "in the middle",
         "metadata": {}
+    },
+    {
+        "id": "d1ab1646-be31-434c-a400-965daf44ba63",
+        "timestamp": "2024-11-27T17:24:29.814427Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_TokQ5kAr4KdZOZykPiSRXqVY",
+            "function": {
+                "arguments": "{\"component_id\":\"Footer1732094771\",\"image_input\":\"an apple\",\"placement_instructions\":\"place the image in the middle\",\"acknowledgement_message\":\"Okay, I'm generating the image and adding it to the middle of the footer...\"}",
+                "name": "GenerateImageAndPlaceInComponent"
+            },
+            "type": "function"
+        }
     }
 ]
