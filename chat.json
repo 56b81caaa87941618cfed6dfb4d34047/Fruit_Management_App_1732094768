@@ -6,21 +6,5 @@
         "source": "base_assistant",
         "content": "Welcome to your new project! I can help you edit it however you want. What would you like to do?",
         "metadata": {}
-    },
-    {
-        "id": "a9b67bc1-663b-450d-a693-6742a29bc871",
-        "timestamp": "2024-11-27T17:17:01.333069Z",
-        "role": "user",
-        "source": "web_client",
-        "content": "generate an image of an apple",
-        "metadata": {}
-    },
-    {
-        "id": "ea8bb393-8241-4b0e-9f3a-0b8a95ad3a5a",
-        "timestamp": "2024-11-27T17:17:09.639948Z",
-        "role": "assistant",
-        "source": "base_assistant",
-        "content": "Sure, I'll generate an image of an apple and place it in the `Hero1732094771` component.\n\nOkay, I'm generating the image and adding it to the component...\n\n",
-        "metadata": {}
     }
 ]
