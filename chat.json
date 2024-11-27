@@ -73,5 +73,15 @@
         "source": "base_assistant",
         "content": "The image of an apple has been generated and placed in the middle of the footer component. What would you like to do next?",
         "metadata": {}
+    },
+    {
+        "id": "01d780a7-766e-4b57-8416-be9bf71fe205",
+        "timestamp": "2024-11-27T17:34:32.398947Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "now on the header, use the image f2a6e59fc4f54f1c8e42d997e04f2bb6.jpeg as backgroun",
+        "metadata": {
+            "component_id": "Header1732094771"
+        }
     }
 ]
