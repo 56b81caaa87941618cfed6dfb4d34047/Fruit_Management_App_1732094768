@@ -96,5 +96,13 @@
         "source": "smart_contract_assistant",
         "content": "Your smart contract has been generated. Would you like to deploy it now?",
         "metadata": {}
+    },
+    {
+        "id": "6c10649e-ffc8-4015-ba7c-5effd3433ad1",
+        "timestamp": "2024-12-02T16:39:08.366851Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "create a new sc for staking",
+        "metadata": {}
     }
 ]
