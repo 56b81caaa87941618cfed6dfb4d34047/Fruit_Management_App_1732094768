@@ -6,5 +6,13 @@
         "source": "base_assistant",
         "content": "Welcome to your new project! I can help you edit it however you want. What would you like to do?",
         "metadata": {}
+    },
+    {
+        "id": "3ee74ee6-217e-490b-8c09-f0cd7785e98d",
+        "timestamp": "2024-12-02T17:37:31.617460Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "create a swapping smart contract",
+        "metadata": {}
     }
 ]
