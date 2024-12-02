@@ -145,5 +145,13 @@
         "source": "smart_contract_assistant",
         "content": "The frontend for the SwappingContract has already been generated as part of the deployment process. Is there anything else you need assistance with?",
         "metadata": {}
+    },
+    {
+        "id": "93b1f055-7c62-4631-83ed-959324025861",
+        "timestamp": "2024-12-02T17:46:57.883834Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a swapping smart contract",
+        "metadata": {}
     }
 ]
