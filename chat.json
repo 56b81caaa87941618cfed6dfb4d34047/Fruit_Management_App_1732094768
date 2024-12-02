@@ -137,5 +137,13 @@
         "source": "web_client",
         "content": "yes, generate a frontend for this sc",
         "metadata": {}
+    },
+    {
+        "id": "48d6aac9-f1f8-4dac-8ded-6fbeb1490de7",
+        "timestamp": "2024-12-02T17:45:33.134213Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The frontend for the SwappingContract has already been generated as part of the deployment process. Is there anything else you need assistance with?",
+        "metadata": {}
     }
 ]
