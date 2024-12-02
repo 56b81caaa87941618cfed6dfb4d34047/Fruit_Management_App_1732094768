@@ -233,5 +233,13 @@
             },
             "type": "function"
         }
+    },
+    {
+        "id": "27ddac77-22a4-4b7f-807c-1617173628c5",
+        "timestamp": "2024-12-02T17:49:33.330611Z",
+        "role": "assistant",
+        "source": "tool:DeployAndGenerateFrontend",
+        "content": "Deploying SwappingContract2 and generating the frontend...",
+        "metadata": {}
     }
 ]
