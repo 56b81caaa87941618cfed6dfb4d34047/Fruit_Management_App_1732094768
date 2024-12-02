@@ -374,5 +374,13 @@
         "source": "smart_contract_assistant",
         "content": "Can you please provide more specific details on the staking smart contract you need? Include information such as:\n1. The staking token (e.g., ETH).\n2. The reward mechanism.\n3. Any additional requirements or features.",
         "metadata": {}
+    },
+    {
+        "id": "697b019c-c402-4793-8c4e-b3fb4afc164e",
+        "timestamp": "2024-12-02T16:53:02.719827Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "1. yest",
+        "metadata": {}
     }
 ]
