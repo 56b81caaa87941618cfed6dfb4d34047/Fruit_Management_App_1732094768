@@ -341,5 +341,13 @@
         "source": "smart_contract_assistant",
         "content": "It seems there is an issue with deploying the contract. Please provide more information or specific parameters related to the deployment process.",
         "metadata": {}
+    },
+    {
+        "id": "cc6d1cbc-d936-4abf-8e14-90d9467b8be9",
+        "timestamp": "2024-12-02T17:52:17.664271Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "try now",
+        "metadata": {}
     }
 ]
