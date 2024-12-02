@@ -649,5 +649,20 @@
         "metadata": {
             "tool_call_id": "call_6vLYnDYDY7XjQzfo7YWOas0A"
         }
+    },
+    {
+        "id": "cd30bdd3-3081-434c-8d90-406badb081c6",
+        "timestamp": "2024-12-02T17:05:51.128577Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_H4Gi0Y5qsvJEQj6hAS8TlJ3V",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A staking contract that allows users to stake ETH, withdraw their staked ETH, and earn rewards based on the staking duration. The main functionalities should include staking, withdrawing, and reward distribution.\",\"acknowledgement_message\":\"Okay, I'm generating the staking contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
