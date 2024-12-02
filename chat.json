@@ -333,5 +333,13 @@
         "source": "base_assistant",
         "content": "I apologize for the inconvenience. Please provide the detailed description or functionality you need for the staking smart contract, and I'll help you create it.",
         "metadata": {}
+    },
+    {
+        "id": "bc4f0852-cfae-43c7-a8ff-ee9c30081268",
+        "timestamp": "2024-12-02T16:52:44.741928Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate the sc for staking please",
+        "metadata": {}
     }
 ]
