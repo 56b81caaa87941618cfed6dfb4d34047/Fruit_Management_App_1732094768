@@ -62,5 +62,15 @@
         "source": "tool:generate_smart_contract",
         "content": "Okay, I'm generating the smart contract...",
         "metadata": {}
+    },
+    {
+        "id": "9fa427bf-3fc5-4f92-b6fe-9bb0e4ae3d74",
+        "timestamp": "2024-12-02T18:12:47.047344Z",
+        "role": "tool_result",
+        "source": "WriteSmartContract",
+        "content": "Failed to generate a compilable smart contract",
+        "metadata": {
+            "tool_call_id": "call_LszBRFEpL5tY7jNvMxhBKki5"
+        }
     }
 ]
