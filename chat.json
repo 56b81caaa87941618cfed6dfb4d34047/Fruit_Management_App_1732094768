@@ -372,5 +372,13 @@
         "source": "tool:DeployAndGenerateFrontend",
         "content": "Deploying SwappingContract2 and generating the frontend on Holesky.",
         "metadata": {}
+    },
+    {
+        "id": "a325b375-e8fe-453e-a954-8d6d083a4b2e",
+        "timestamp": "2024-12-02T18:10:50.755053Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a new staking contract",
+        "metadata": {}
     }
 ]
