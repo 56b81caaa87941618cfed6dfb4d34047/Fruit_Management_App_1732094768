@@ -111,5 +111,13 @@
         "source": "tool:generate_smart_contract",
         "content": "Okay, I'm generating the smart contract...",
         "metadata": {}
+    },
+    {
+        "id": "4c3d0ec7-bade-4ccd-b883-4398498ae77a",
+        "timestamp": "2024-12-02T18:15:02.153269Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a new staking contract again",
+        "metadata": {}
     }
 ]
