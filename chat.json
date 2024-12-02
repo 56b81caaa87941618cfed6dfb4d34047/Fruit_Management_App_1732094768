@@ -290,5 +290,15 @@
         "source": "tool:DeployAndGenerateFrontend",
         "content": "Deploying SwappingContract2 and generating the frontend...",
         "metadata": {}
+    },
+    {
+        "id": "4f3ccfcc-e40a-4ffc-80f8-662e444c691e",
+        "timestamp": "2024-12-02T17:50:14.058962Z",
+        "role": "tool_result",
+        "source": "DeployAndGenerateFrontend",
+        "content": "Error during deployment: Incorrect argument count. Expected '2', got '0'.",
+        "metadata": {
+            "tool_call_id": "call_a4VuwRcBX3nyHgpqKpDQgYDi"
+        }
     }
 ]
