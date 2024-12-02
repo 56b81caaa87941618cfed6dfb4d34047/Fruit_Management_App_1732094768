@@ -161,5 +161,13 @@
         "source": "smart_contract_assistant",
         "content": "The SwappingContract has already been generated and deployed. Would you like to do something else with it, or need assistance with another task?",
         "metadata": {}
+    },
+    {
+        "id": "c3401c58-4fd4-4365-8401-2f793a6e4fd6",
+        "timestamp": "2024-12-02T17:48:45.753446Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "a new one",
+        "metadata": {}
     }
 ]
