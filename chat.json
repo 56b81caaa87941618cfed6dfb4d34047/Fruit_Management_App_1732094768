@@ -267,5 +267,20 @@
         "source": "web_client",
         "content": "holesky",
         "metadata": {}
+    },
+    {
+        "id": "01bd2344-2852-4edb-be20-878b3ee13cd7",
+        "timestamp": "2024-12-02T17:50:10.293177Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_a4VuwRcBX3nyHgpqKpDQgYDi",
+            "function": {
+                "arguments": "{\"contract_id\":\"SwappingContract2\",\"frontend_description\":\"Deploying and generating frontend for SwappingContract2 on Holesky to allow token swapping between users.\",\"acknowledgement_message\":\"Deploying SwappingContract2 and generating the frontend...\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
     }
 ]
