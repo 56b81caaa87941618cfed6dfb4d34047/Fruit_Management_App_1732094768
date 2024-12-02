@@ -161,5 +161,13 @@
         "source": "smart_contract_assistant",
         "content": "There was a compilation error with the provided smart contract. If the contract provided has no errors, it might be a formatting or copying issue. Can you provide the exact contract details again or any specific features you need in the staking contract?",
         "metadata": {}
+    },
+    {
+        "id": "b64966d7-23cf-4a08-aac8-34af156989b9",
+        "timestamp": "2024-12-02T16:44:18.303141Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "staking eth",
+        "metadata": {}
     }
 ]
