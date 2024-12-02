@@ -259,5 +259,13 @@
         "source": "smart_contract_assistant",
         "content": "There was an error during deployment. Please ensure that all necessary parameters for deployment are provided. Would you like to deploy SwappingContract2 on a specific chain? If so, please specify the chain.",
         "metadata": {}
+    },
+    {
+        "id": "0cc92c51-4ca5-4be0-9996-b039c090499e",
+        "timestamp": "2024-12-02T17:50:06.047998Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "holesky",
+        "metadata": {}
     }
 ]
