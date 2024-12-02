@@ -121,5 +121,13 @@
         "metadata": {
             "tool_call_id": "call_oq4JWoA3H4Z1JYtA3XcPuN4R"
         }
+    },
+    {
+        "id": "05c10c8a-3f87-4ee7-af50-9c0f6f300c06",
+        "timestamp": "2024-12-02T17:45:13.745405Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The SwappingContract has been successfully deployed. Is there anything else you would like to do?",
+        "metadata": {}
     }
 ]
