@@ -497,5 +497,13 @@
         "source": "base_assistant",
         "content": "I apologize, but it seems there's a persistent issue with generating the staking contract. Could you please provide the specific functionalities and features you need, so we can better assist you? Or perhaps you could try adjusting your requirements slightly?",
         "metadata": {}
+    },
+    {
+        "id": "2f03999c-e6fe-40c2-b18b-1c1ae1dc1db5",
+        "timestamp": "2024-12-02T17:01:22.899734Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "et hstaking, there is no error, there was bug later in the road that is fixed now",
+        "metadata": {}
     }
 ]
