@@ -323,5 +323,15 @@
         "source": "tool:DeployAndGenerateFrontend",
         "content": "Deploying SwappingContract2 and generating the frontend on Holesky.",
         "metadata": {}
+    },
+    {
+        "id": "0e7e5da8-6a40-4620-b263-4512efb9d61b",
+        "timestamp": "2024-12-02T17:50:22.146452Z",
+        "role": "tool_result",
+        "source": "DeployAndGenerateFrontend",
+        "content": "Error during deployment: Incorrect argument count. Expected '2', got '0'.",
+        "metadata": {
+            "tool_call_id": "call_a4VuwRcBX3nyHgpqKpDQgYDi"
+        }
     }
 ]
