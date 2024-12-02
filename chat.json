@@ -104,5 +104,20 @@
         "source": "web_client",
         "content": "create a new sc for staking",
         "metadata": {}
+    },
+    {
+        "id": "0fbcc388-b2ac-42bd-ab40-1f12abd366f3",
+        "timestamp": "2024-12-02T16:39:12.555198Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_zf2dSQadofuEvV5KuepF3sMM",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A staking contract that allows users to stake ERC20 tokens and earn rewards.\",\"acknowledgement_message\":\"Okay, I'm generating the staking contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
