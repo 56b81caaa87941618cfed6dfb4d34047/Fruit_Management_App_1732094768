@@ -153,5 +153,13 @@
         "source": "web_client",
         "content": "what was the error? the sc is fine as it is",
         "metadata": {}
+    },
+    {
+        "id": "ccab1176-26f2-4285-9aa2-16cac456f162",
+        "timestamp": "2024-12-02T16:44:04.436534Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "There was a compilation error with the provided smart contract. If the contract provided has no errors, it might be a formatting or copying issue. Can you provide the exact contract details again or any specific features you need in the staking contract?",
+        "metadata": {}
     }
 ]
