@@ -382,5 +382,20 @@
         "source": "web_client",
         "content": "1. yest",
         "metadata": {}
+    },
+    {
+        "id": "3e262911-ed1e-4f9e-84d0-0895766707ec",
+        "timestamp": "2024-12-02T16:53:06.651439Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_5WfXi8DyipN0IQgzO1YtqJSq",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A simple staking contract for staking ETH. Users can stake ETH, withdraw their staked amount, and earn rewards based on staking duration.\",\"acknowledgement_message\":\"Okay, I'm generating the staking contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
