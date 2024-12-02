@@ -14,5 +14,20 @@
         "source": "web_client",
         "content": "generate a new staking contract again",
         "metadata": {}
+    },
+    {
+        "id": "5f65b6c3-1f1c-4aff-93ef-2c98da0ad26b",
+        "timestamp": "2024-12-02T18:15:19.042482Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_CtmpkJraEUgW2bkT31tyQbi3",
+            "function": {
+                "arguments": "{}",
+                "name": "TransferToSmartContractAssistant"
+            },
+            "type": "function"
+        }
     }
 ]
