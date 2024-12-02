@@ -887,5 +887,13 @@
         "source": "smart_contract_assistant",
         "content": "I'm still encountering issues generating the staking contract. Could you provide any additional details or specific functionalities that you might want to include? This might help to resolve the issue. \n\nAlternatively, I can assist you with other tasks if needed.",
         "metadata": {}
+    },
+    {
+        "id": "3c8735ac-035e-430f-8a0a-1e8c55cb9f95",
+        "timestamp": "2024-12-02T17:22:59.499997Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "no worries do it again, the simple version",
+        "metadata": {}
     }
 ]
