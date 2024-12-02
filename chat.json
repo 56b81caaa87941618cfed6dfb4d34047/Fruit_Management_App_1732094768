@@ -137,5 +137,20 @@
         "source": "web_client",
         "content": "generate a new staking contract again",
         "metadata": {}
+    },
+    {
+        "id": "15007377-dec5-45c4-9827-fbaefe9397dd",
+        "timestamp": "2024-12-02T18:21:04.563624Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_k12hbmZ0uoer5vLUQqamZhTu",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A smart contract that allows users to stake ERC20 tokens and earn rewards periodically based on their staked amount.\",\"acknowledgement_message\":\"Okay, I'm generating the smart contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
