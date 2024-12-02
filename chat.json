@@ -88,5 +88,20 @@
         "source": "web_client",
         "content": "generate a new staking contract again",
         "metadata": {}
+    },
+    {
+        "id": "6f81a439-c758-4026-a83f-e4f4b044b7a4",
+        "timestamp": "2024-12-02T18:13:54.314130Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_5vg6TEYhn20aY4uW16cmv6zD",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A new staking contract for the app\",\"acknowledgement_message\":\"Okay, I'm generating the smart contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
