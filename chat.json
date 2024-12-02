@@ -153,5 +153,13 @@
         "source": "web_client",
         "content": "generate a swapping smart contract",
         "metadata": {}
+    },
+    {
+        "id": "38a5ff0f-1966-4039-a46b-06b065422cf3",
+        "timestamp": "2024-12-02T17:47:00.645194Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The SwappingContract has already been generated and deployed. Would you like to do something else with it, or need assistance with another task?",
+        "metadata": {}
     }
 ]
