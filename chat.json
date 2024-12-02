@@ -14,5 +14,20 @@
         "source": "web_client",
         "content": "generate this exact sc",
         "metadata": {}
+    },
+    {
+        "id": "bd490781-f808-464c-8624-bbaf404f699d",
+        "timestamp": "2024-12-02T16:24:42.044092Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_dp68VxR1kXyb5UgEKoa4z2W2",
+            "function": {
+                "arguments": "{}",
+                "name": "TransferToSmartContractAssistant"
+            },
+            "type": "function"
+        }
     }
 ]
