@@ -861,5 +861,13 @@
             },
             "type": "function"
         }
+    },
+    {
+        "id": "0a2a4388-a750-4030-966b-1e419d0a51bf",
+        "timestamp": "2024-12-02T17:19:12.975503Z",
+        "role": "assistant",
+        "source": "tool:generate_smart_contract",
+        "content": "Okay, I'm generating the staking contract...",
+        "metadata": {}
     }
 ]
