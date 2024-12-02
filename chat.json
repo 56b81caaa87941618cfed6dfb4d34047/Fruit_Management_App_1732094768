@@ -218,5 +218,20 @@
         "source": "web_client",
         "content": "generate the sc for staking please",
         "metadata": {}
+    },
+    {
+        "id": "b4342798-6b3c-4849-bd26-9e747b54adfe",
+        "timestamp": "2024-12-02T16:46:23.791787Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_5PTb4EtNgU7eU5TdllguhYnx",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A Solidity smart contract allowing users to stake ETH and earn rewards. It should include functions to stake, withdraw, and distribute rewards, and track users' stakes. Rewards calculation should be based on the duration of staking.\",\"acknowledgement_message\":\"Okay, I'm generating the staking contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
