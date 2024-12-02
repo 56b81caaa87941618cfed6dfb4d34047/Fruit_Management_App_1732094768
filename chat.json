@@ -169,5 +169,20 @@
         "source": "web_client",
         "content": "a new one",
         "metadata": {}
+    },
+    {
+        "id": "a55a8ee5-9b68-468f-af01-c1f20dcee60c",
+        "timestamp": "2024-12-02T17:48:49.081777Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_1NZrxz3fJV5WNd67zaWhPyKn",
+            "function": {
+                "arguments": "{\"contract_id\":\"SwappingContract2\",\"description\":\"A smart contract for swapping tokens between users.\",\"acknowledgement_message\":\"I'm generating the smart contract for a swapping mechanism...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
