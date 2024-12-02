@@ -431,5 +431,20 @@
         "source": "web_client",
         "content": "generate a sc for eth staking",
         "metadata": {}
+    },
+    {
+        "id": "922bbb8b-d886-4a35-8d82-03495e8fcb71",
+        "timestamp": "2024-12-02T16:59:20.542105Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_FtKmN41OUYD8thnWBiSugmfF",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A smart contract for staking ETH where users can stake their ETH, withdraw their stake, and receive rewards based on the staking duration.\",\"acknowledgement_message\":\"Okay, I'm generating the staking contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
