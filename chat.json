@@ -210,5 +210,13 @@
         "source": "smart_contract_assistant",
         "content": "I have generated the new swapping smart contract (SwappingContract2). Would you like to deploy it?",
         "metadata": {}
+    },
+    {
+        "id": "805487f4-e069-4f08-88fe-5c930ef3fd69",
+        "timestamp": "2024-12-02T17:49:28.636497Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "yes",
+        "metadata": {}
     }
 ]
