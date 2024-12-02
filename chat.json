@@ -14,5 +14,20 @@
         "source": "web_client",
         "content": "create a swapping smart contract",
         "metadata": {}
+    },
+    {
+        "id": "a8181c78-303a-480a-825a-fa2c13f90b91",
+        "timestamp": "2024-12-02T17:39:18.776082Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_g8j72knPDBe50dJ4iltoEz4m",
+            "function": {
+                "arguments": "{}",
+                "name": "TransferToSmartContractAssistant"
+            },
+            "type": "function"
+        }
     }
 ]
