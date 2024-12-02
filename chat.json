@@ -39,5 +39,20 @@
         "metadata": {
             "tool_call_id": "call_g8j72knPDBe50dJ4iltoEz4m"
         }
+    },
+    {
+        "id": "c63599d6-c654-41aa-bd3d-160ef3507d55",
+        "timestamp": "2024-12-02T17:39:23.418869Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_LBSVGO1f6akfuYS2pEK1eUnZ",
+            "function": {
+                "arguments": "{\"contract_id\":\"SwappingContract\",\"description\":\"A smart contract that allows users to swap between two ERC20 tokens\",\"acknowledgement_message\":\"Okay, I'm generating the smart contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
