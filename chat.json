@@ -731,5 +731,20 @@
         "metadata": {
             "tool_call_id": "call_PEROP8MpFG2s4ZuCK0KIvR0m"
         }
+    },
+    {
+        "id": "830c21a7-c8e5-4232-aeac-30cc8cbcd65e",
+        "timestamp": "2024-12-02T17:13:14.686726Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_TrQD5pV0ZszpmUVF7KsuE4D4",
+            "function": {
+                "arguments": "{}",
+                "name": "TransferToBaseAssistant"
+            },
+            "type": "function"
+        }
     }
 ]
