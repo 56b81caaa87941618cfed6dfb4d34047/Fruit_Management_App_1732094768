@@ -210,5 +210,13 @@
         "source": "smart_contract_assistant",
         "content": "I am still unable to generate a compilable staking contract. Could you please provide more specific requirements or any additional details that might help in generating the contract correctly?",
         "metadata": {}
+    },
+    {
+        "id": "adbf2670-7d0b-4fc8-9a96-5f89b373eb93",
+        "timestamp": "2024-12-02T16:46:15.617737Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate the sc for staking please",
+        "metadata": {}
     }
 ]
