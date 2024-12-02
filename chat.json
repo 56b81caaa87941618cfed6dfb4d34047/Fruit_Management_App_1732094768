@@ -423,5 +423,13 @@
         "source": "smart_contract_assistant",
         "content": "I am hitting an issue generating the staking contract. You might want to manually input more specific features and conditions for it. If you need further assistance, please let me know.",
         "metadata": {}
+    },
+    {
+        "id": "c0ec9114-81ad-4ac3-85d4-d02bdc0b9c12",
+        "timestamp": "2024-12-02T16:59:14.802542Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a sc for eth staking",
+        "metadata": {}
     }
 ]
