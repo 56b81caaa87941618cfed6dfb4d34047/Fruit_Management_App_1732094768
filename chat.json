@@ -72,5 +72,13 @@
         "metadata": {
             "tool_call_id": "call_O4WVkHjYEKxSOYhcxQfI0hlf"
         }
+    },
+    {
+        "id": "5491352c-db1f-4606-95d2-10d5900fdf97",
+        "timestamp": "2024-12-02T17:43:31.443902Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "I have generated the swapping smart contract. Would you like to deploy it?",
+        "metadata": {}
     }
 ]
