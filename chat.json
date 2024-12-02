@@ -145,5 +145,13 @@
         "source": "smart_contract_assistant",
         "content": "I was unable to generate the staking contract. Can you provide some additional details or simplify the requirements?",
         "metadata": {}
+    },
+    {
+        "id": "6aa7bee1-fcd6-4129-9bc6-5a77184f42e9",
+        "timestamp": "2024-12-02T16:43:59.051038Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "what was the error? the sc is fine as it is",
+        "metadata": {}
     }
 ]
