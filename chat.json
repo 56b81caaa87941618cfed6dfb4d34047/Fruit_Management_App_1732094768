@@ -54,5 +54,13 @@
             },
             "type": "function"
         }
+    },
+    {
+        "id": "5708ebaa-8a97-4fc8-8c3e-58b93131c7ba",
+        "timestamp": "2024-12-02T17:43:03.882400Z",
+        "role": "assistant",
+        "source": "tool:generate_smart_contract",
+        "content": "I'm generating the smart contract for a swapping mechanism...",
+        "metadata": {}
     }
 ]
