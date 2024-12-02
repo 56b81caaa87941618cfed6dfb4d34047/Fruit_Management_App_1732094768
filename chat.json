@@ -772,5 +772,20 @@
         "source": "web_client",
         "content": "no worries do it again, the simple version",
         "metadata": {}
+    },
+    {
+        "id": "362c0ee3-7656-4a32-8ec5-1a4558ef87ff",
+        "timestamp": "2024-12-02T17:15:51.122351Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_whfW2dFiJD1xlVZZoyZKWqyq",
+            "function": {
+                "arguments": "{}",
+                "name": "TransferToSmartContractAssistant"
+            },
+            "type": "function"
+        }
     }
 ]
