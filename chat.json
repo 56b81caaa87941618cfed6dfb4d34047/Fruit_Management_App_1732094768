@@ -505,5 +505,20 @@
         "source": "web_client",
         "content": "et hstaking, there is no error, there was bug later in the road that is fixed now",
         "metadata": {}
+    },
+    {
+        "id": "7a21903b-b932-4cf5-b7d8-f5ab8989c1c6",
+        "timestamp": "2024-12-02T17:01:26.989391Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_j4nzjDgdhMoNwlqciJaDAKns",
+            "function": {
+                "arguments": "{}",
+                "name": "TransferToSmartContractAssistant"
+            },
+            "type": "function"
+        }
     }
 ]
