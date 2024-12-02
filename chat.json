@@ -241,5 +241,15 @@
         "source": "tool:generate_smart_contract",
         "content": "Okay, I'm generating the staking contract...",
         "metadata": {}
+    },
+    {
+        "id": "ffea18c9-291e-4f5c-a942-ae6685bf1b1a",
+        "timestamp": "2024-12-02T16:47:38.150292Z",
+        "role": "tool_result",
+        "source": "WriteSmartContract",
+        "content": "Failed to generate a compilable smart contract",
+        "metadata": {
+            "tool_call_id": "call_5PTb4EtNgU7eU5TdllguhYnx"
+        }
     }
 ]
