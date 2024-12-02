@@ -1065,5 +1065,15 @@
         "source": "tool:DeployAndGenerateFrontend",
         "content": "Deploying the contract and generating the frontend...",
         "metadata": {}
+    },
+    {
+        "id": "b5b58076-c897-4848-87cf-6f233e842258",
+        "timestamp": "2024-12-02T17:32:37.704555Z",
+        "role": "tool_result",
+        "source": "DeployAndGenerateFrontend",
+        "content": "Success: deployed contract to 0xE67792e7E20ddAFE08d73743FAc55af4548a5A2d in Holesky\nZKPay integration: Not enabled",
+        "metadata": {
+            "tool_call_id": "call_wlpQY5zcal4nkapwiRfPZb6w"
+        }
     }
 ]
