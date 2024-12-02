@@ -251,5 +251,13 @@
         "metadata": {
             "tool_call_id": "call_QCYtKwLYKcfAiylMFdmCNtaM"
         }
+    },
+    {
+        "id": "caac15a5-a31f-47ca-8c35-ca445463a1c3",
+        "timestamp": "2024-12-02T17:49:38.243934Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "There was an error during deployment. Please ensure that all necessary parameters for deployment are provided. Would you like to deploy SwappingContract2 on a specific chain? If so, please specify the chain.",
+        "metadata": {}
     }
 ]
