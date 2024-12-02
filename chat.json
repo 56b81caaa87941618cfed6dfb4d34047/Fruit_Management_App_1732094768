@@ -977,5 +977,13 @@
         "metadata": {
             "tool_call_id": "call_YedYZeuElbR06dGdSuwpENKq"
         }
+    },
+    {
+        "id": "8d8fda14-b4ac-4c4a-ae20-7cd78197158e",
+        "timestamp": "2024-12-02T17:27:28.660921Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "I am truly sorry, but I am still unable to generate the staking contract. If there is anything else you need assistance with or any specific features you want to add, please let me know.",
+        "metadata": {}
     }
 ]
