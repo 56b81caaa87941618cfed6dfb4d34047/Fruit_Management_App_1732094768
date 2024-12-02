@@ -300,5 +300,20 @@
         "metadata": {
             "tool_call_id": "call_a4VuwRcBX3nyHgpqKpDQgYDi"
         }
+    },
+    {
+        "id": "0c11bb02-6cc2-4b77-b3e1-5ae620b4206b",
+        "timestamp": "2024-12-02T17:50:18.790531Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_a4VuwRcBX3nyHgpqKpDQgYDi",
+            "function": {
+                "arguments": "{\"contract_id\":\"SwappingContract2\",\"frontend_description\":\"Frontend for SwappingContract2 allowing users to create, accept, and cancel token swap offers.\",\"acknowledgement_message\":\"Deploying SwappingContract2 and generating the frontend on Holesky.\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
     }
 ]
