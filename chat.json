@@ -169,5 +169,20 @@
         "source": "web_client",
         "content": "staking eth",
         "metadata": {}
+    },
+    {
+        "id": "c05df6ba-7af1-47c3-b5eb-017e0059e94f",
+        "timestamp": "2024-12-02T16:44:22.889188Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_U6HDDu5cfOIRJuTYiEtPwUxP",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A staking contract that allows users to stake ETH and earn rewards.\",\"acknowledgement_message\":\"Okay, I'm generating the staking contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
