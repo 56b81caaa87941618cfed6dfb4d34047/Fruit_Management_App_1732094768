@@ -39,5 +39,20 @@
         "metadata": {
             "tool_call_id": "call_3E1ROZcH3L3MY1kDsY8rOp5Z"
         }
+    },
+    {
+        "id": "0bb8dde1-b18c-48da-846d-94ce8021f28a",
+        "timestamp": "2024-12-02T18:11:17.000768Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_LszBRFEpL5tY7jNvMxhBKki5",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A new staking contract for the app\",\"acknowledgement_message\":\"Okay, I'm generating the smart contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
