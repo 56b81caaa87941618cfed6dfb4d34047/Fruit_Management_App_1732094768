@@ -218,5 +218,20 @@
         "source": "web_client",
         "content": "yes",
         "metadata": {}
+    },
+    {
+        "id": "ee2910a3-2f4a-4e70-8523-246b22970da1",
+        "timestamp": "2024-12-02T17:49:31.994006Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_QCYtKwLYKcfAiylMFdmCNtaM",
+            "function": {
+                "arguments": "{\"contract_id\":\"SwappingContract2\",\"frontend_description\":\"Deploying and generating frontend for SwappingContract2 to allow token swapping between users.\",\"acknowledgement_message\":\"Deploying SwappingContract2 and generating the frontend...\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
     }
 ]
