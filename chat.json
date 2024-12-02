@@ -6,38 +6,5 @@
         "source": "base_assistant",
         "content": "Welcome to your new project! I can help you edit it however you want. What would you like to do?",
         "metadata": {}
-    },
-    {
-        "id": "3ee74ee6-217e-490b-8c09-f0cd7785e98d",
-        "timestamp": "2024-12-02T17:37:31.617460Z",
-        "role": "user",
-        "source": "web_client",
-        "content": "create a swapping smart contract",
-        "metadata": {}
-    },
-    {
-        "id": "c3af0ed4-64b5-4b0a-a924-632445f72db4",
-        "timestamp": "2024-12-02T17:37:34.064288Z",
-        "role": "tool_call",
-        "source": "base_assistant",
-        "content": null,
-        "metadata": {
-            "id": "call_NhtucG4VOdPsTPsPOvN5uqUS",
-            "function": {
-                "arguments": "{}",
-                "name": "TransferToSmartContractAssistant"
-            },
-            "type": "function"
-        }
-    },
-    {
-        "id": "304d532a-4bcd-4268-a0f8-e0a75155e4ca",
-        "timestamp": "2024-12-02T17:37:35.248244Z",
-        "role": "tool_result",
-        "source": "TransferToSmartContractAssistant",
-        "content": "Conversation switched to smart_contract_assistant. Adopt the persona of smart_contract_assistant immediately.",
-        "metadata": {
-            "tool_call_id": "call_NhtucG4VOdPsTPsPOvN5uqUS"
-        }
     }
 ]
