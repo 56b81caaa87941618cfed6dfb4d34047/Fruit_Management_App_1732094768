@@ -80,5 +80,13 @@
         "source": "smart_contract_assistant",
         "content": "I attempted to generate the smart contract but there was an error in the process. Let's try again. If the issue persists, we may need to modify the contract description. Would you like me to try again?",
         "metadata": {}
+    },
+    {
+        "id": "69114932-2952-4a7d-93cf-a277199654e7",
+        "timestamp": "2024-12-02T18:18:49.792044Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a new staking contract again",
+        "metadata": {}
     }
 ]
