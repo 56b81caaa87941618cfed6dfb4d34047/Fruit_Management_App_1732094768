@@ -1034,5 +1034,13 @@
         "source": "smart_contract_assistant",
         "content": "Would you like to deploy this staking contract now?",
         "metadata": {}
+    },
+    {
+        "id": "8e5099ce-b56c-4913-8aeb-84cca19fd2ee",
+        "timestamp": "2024-12-02T17:31:44.107434Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "yes",
+        "metadata": {}
     }
 ]
