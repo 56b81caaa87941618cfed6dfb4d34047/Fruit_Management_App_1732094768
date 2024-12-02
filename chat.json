@@ -129,5 +129,13 @@
         "source": "smart_contract_assistant",
         "content": "The SwappingContract has been successfully deployed. Is there anything else you would like to do?",
         "metadata": {}
+    },
+    {
+        "id": "19a87627-5ce8-447d-867f-6e3008de7a90",
+        "timestamp": "2024-12-02T17:45:30.506411Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "yes, generate a frontend for this sc",
+        "metadata": {}
     }
 ]
