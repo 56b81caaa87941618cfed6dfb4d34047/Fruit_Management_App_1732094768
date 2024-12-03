@@ -85,6 +85,12 @@ const ContractInteraction: React.FC = () => {
      await tx.wait();
    } catch (error) {
      console.error('Detailed error:', error);
+     console.log('Error response:', {
+      code: error?.code,
+      message: error?.message,
+      data: error?.error?.data,
+      reason: error?.error?.reason
+    });
    }
   };
   const handleQueryZKPay = async () => {
@@ -118,10 +124,13 @@ const ContractInteraction: React.FC = () => {
       const newQueryHash = await contract._queryHash();
       setQueryHash(newQueryHash);
       setErrorMessage('Query sent successfully!');
-    } catch (error) {
-      console.error('Error details:', error);
-      setErrorMessage(error.message || 'Unknown error');
-    }
+    } catch (error: any) {
+      console.log('Query error:', {
+        code: error?.code,
+        message: error?.message,
+        data: error?.error?.data,
+        reason: error?.error?.reason
+      });
 };
 
   const handleWithdraw = async () => {
