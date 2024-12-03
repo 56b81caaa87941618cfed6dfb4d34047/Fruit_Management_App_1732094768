@@ -11,7 +11,7 @@ const contractABI = [
   "function _zkpay() public view returns (address)",
   "function _queryHash() public view returns (bytes32)",
   "function addTrustedRelayer(address relayer) external",
-  "function queryWithNative(DataTypes.QueryData) external payable returns (bytes32)"
+  "function queryWithNative((bytes,uint8,tuple[],uint64,address,uint64,bytes,uint8)) external payable returns (bytes32)"
 ];
 
 const ContractInteraction: React.FC = () => {
@@ -85,7 +85,18 @@ const ContractInteraction: React.FC = () => {
       await checkNetwork();
       const contract = await getContract();
       
-      const tx = await contract.queryWithNative({ 
+      const queryData = {
+        query: ethers.utils.toUtf8Bytes("SELECT FROM_ADDRESS, COUNT(*) AS TRANSACTION_COUNT FROM ETHEREUM.TRANSACTIONS WHERE TO_ADDRESS = '0xae7ab96520de3a18e5e111b5eaab095312d7fe84' AND FROM_ADDRESS != '0x0000000000000000000000000000000000000000' GROUP BY FROM_ADDRESS ORDER BY TRANSACTION_COUNT DESC LIMIT 40;"),
+        queryType: 0,
+        queryParameters: [],
+        timeout: Math.floor(Date.now()/1000) + 1800,
+        callbackClientContractAddress: contract.address,
+        callbackGasLimit: 400000,
+        callbackData: "0x",
+        zkVerficiation: 0
+      };
+  
+      const tx = await contract.queryWithNative(queryData, { 
         value: ethers.utils.parseEther("0.1"),
         gasLimit: 1000000
       });
@@ -97,7 +108,7 @@ const ContractInteraction: React.FC = () => {
       console.error('Error details:', error);
       setErrorMessage(error.message || 'Unknown error');
     }
-  };
+};
 
   const handleWithdraw = async () => {
     try {
