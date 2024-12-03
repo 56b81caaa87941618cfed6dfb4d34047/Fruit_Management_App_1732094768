@@ -186,5 +186,20 @@
         "source": "web_client",
         "content": "generate a new staking contract again",
         "metadata": {}
+    },
+    {
+        "id": "bce84183-0d17-4f8f-bed4-4101c300e6ee",
+        "timestamp": "2024-12-03T07:39:39.021051Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_mK4agdOu29RAq1rxNKPgjGWw",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"description\":\"A smart contract where users can stake tokens to earn reward tokens over time based on their staked amount.\",\"acknowledgement_message\":\"Okay, I'm generating the smart contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
