@@ -198,5 +198,13 @@
         "source": "smart_contract_assistant",
         "content": "I've created the MintingContract for minting new tokens. Would you like to deploy this contract now?",
         "metadata": {}
+    },
+    {
+        "id": "1e164f0c-eebe-4f21-8881-914d0c935758",
+        "timestamp": "2024-12-03T11:09:22.384773Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "yes",
+        "metadata": {}
     }
 ]
