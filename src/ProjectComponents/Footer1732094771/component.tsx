@@ -60,8 +60,17 @@ const ContractInteraction: React.FC = () => {
     }
   };
   const setupRelayer = async () => {
-    const zkPayContract = new ethers.Contract(zkPayAddress, zkPayABI, signer);
-    await zkPayContract.addTrustedRelayer(yourRelayerAddress);
+    try {
+      await checkNetwork();
+      const contract = await getContract();
+      const zkpayAddress = await contract._zkpay();
+      const tx = await contract.addTrustedRelayer(zkpayAddress);
+      await tx.wait();
+      setErrorMessage('Relayer setup successful!');
+    } catch (error) {
+      console.error('Setup error:', error);
+      setErrorMessage(error.message || 'Relayer setup failed');
+    }
   };
   const handleQueryZKPay = async () => {
     try {
@@ -189,6 +198,9 @@ const ContractInteraction: React.FC = () => {
         />
         <button onClick={handleCancelQuery} className="bg-red-500 text-white p-2 rounded">
           Cancel Query
+        </button>
+        <button onClick={setupRelayer} className="bg-purple-500 text-white p-2 rounded">
+          Setup Relayer
         </button>
       </div>
 
