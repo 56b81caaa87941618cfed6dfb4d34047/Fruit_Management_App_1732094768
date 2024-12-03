@@ -1,6 +1,5 @@
 {
-    "contract_address": "0xE67792e7E20ddAFE08d73743FAc55af4548a5A2d",
-    "chain_id": 17000,
-    "chain_name": "Holesky (Ethereum testnet)",
-    "deployment_timestamp": 1733160721
+    "contract_address": "0x501Dc59508Db1FC91872cDC357Fc34814787CaC3",
+    "tx_hash": "0xfcec687e6f052f6e04e0be92b2870c9089f0f297d9c725b9782182e66c05337b",
+    "block_number": 2861926
 }
