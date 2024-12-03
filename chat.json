@@ -219,5 +219,13 @@
         "metadata": {
             "tool_call_id": "call_mK4agdOu29RAq1rxNKPgjGWw"
         }
+    },
+    {
+        "id": "cf2c7499-4698-4092-855e-a4507e95e35d",
+        "timestamp": "2024-12-03T07:41:10.675574Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "I am unable to generate a staking contract at this moment due to repeated failures. You may want to provide a different description or instructions. How would you like to proceed?",
+        "metadata": {}
     }
 ]
