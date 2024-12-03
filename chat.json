@@ -157,5 +157,20 @@
         "source": "web_client",
         "content": "generate a smart contract for minting",
         "metadata": {}
+    },
+    {
+        "id": "63c69269-8297-4668-a05a-9d000aaad665",
+        "timestamp": "2024-12-03T11:09:00.477053Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_jK99kJC3FQLCy4FoWq5ZSB0d",
+            "function": {
+                "arguments": "{\"contract_id\":\"MintingContract\",\"description\":\"Create a smart contract capable of minting new tokens upon request.\",\"acknowledgement_message\":\"Okay, I'm generating the smart contract for minting tokens...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
