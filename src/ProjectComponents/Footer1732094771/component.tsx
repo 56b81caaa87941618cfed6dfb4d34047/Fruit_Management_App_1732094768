@@ -10,7 +10,9 @@ const contractABI = [
   "function _owner() public view returns (address)",
   "function _zkpay() public view returns (address)",
   "function _queryHash() public view returns (bytes32)",
-  "function addTrustedRelayer(address relayer) external"
+  "function addTrustedRelayer(address relayer) external",
+  "function getAcceptedAssetMethod(address) external view returns (tuple(bool,bool))",
+  "function isTrustedRelayer(address) external view returns (bool)"
 ];
 
 const ContractInteraction: React.FC = () => {
@@ -66,6 +68,10 @@ const ContractInteraction: React.FC = () => {
      const contract = await getContract();
      const provider = new ethers.providers.Web3Provider(window.ethereum);
      const signer = provider.getSigner();
+     
+     console.log('Contract owner:', await contract._owner());
+     console.log('Current caller:', await signer.getAddress());
+    
      const callerAddress = await signer.getAddress();
      
      console.log('Setup attempt:', {
@@ -85,6 +91,11 @@ const ContractInteraction: React.FC = () => {
     try {
       await checkNetwork();
       const contract = await getContract();
+      const acceptedAsset = await contract.getAcceptedAssetMethod(ethers.constants.AddressZero);
+      console.log('Native token accepted?', acceptedAsset);
+      const owner = await contract._owner();
+      const trustedRelayer = await contract.isTrustedRelayer(owner);
+      console.log('Is trusted relayer?', trustedRelayer);
       
       const queryData = {
         query: ethers.utils.toUtf8Bytes(
