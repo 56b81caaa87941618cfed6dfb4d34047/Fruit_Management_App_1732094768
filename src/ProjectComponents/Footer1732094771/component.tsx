@@ -65,16 +65,28 @@ const ContractInteraction: React.FC = () => {
       await checkNetwork();
       const contract = await getContract();
       const zkpayAddress = await contract._zkpay();
-      console.log('ZKPay address:', zkpayAddress);
-      console.log('Query fee:', ethers.utils.formatEther(queryAmount));
-      const tx = await contract.queryZKPay({ value: ethers.utils.parseEther(queryAmount), gasLimit: 10000000000 });
+      
+      console.log({
+        zkpayAddress,
+        queryAmount,
+        parsedAmount: ethers.utils.parseEther(queryAmount).toString()
+      });
+  
+      const tx = await contract.queryZKPay({ 
+        value: ethers.utils.parseEther(queryAmount),
+        gasLimit: 1000000
+      });
       await tx.wait();
       const newQueryHash = await contract._queryHash();
       setQueryHash(newQueryHash);
       setErrorMessage('Query sent successfully!');
-    } catch (error) {
-      console.error('Full error:', error);
-      setErrorMessage(error?.message || 'Unknown error');
+    } catch (error: any) {
+      console.error('Error details:', {
+        message: error.message,
+        code: error.code,
+        errorData: error.error?.data
+      });
+      setErrorMessage(error.message || 'Unknown error');
     }
   };
 
