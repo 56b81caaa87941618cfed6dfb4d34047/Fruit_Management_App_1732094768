@@ -75,5 +75,13 @@
         "source": "base_assistant",
         "content": "The smart contract frontend component has been successfully generated and integrated with your Header. It now includes functionality to connect to a wallet, switch chains, and interact with the main functions of the smart contract.\n\nWhat would you like to do next?",
         "metadata": {}
+    },
+    {
+        "id": "7a62b989-0460-4765-ad9b-492fca429770",
+        "timestamp": "2024-12-03T11:06:43.320385Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a smart contract for minting",
+        "metadata": {}
     }
 ]
