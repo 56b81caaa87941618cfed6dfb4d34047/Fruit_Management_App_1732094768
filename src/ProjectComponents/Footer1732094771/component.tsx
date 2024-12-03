@@ -11,7 +11,8 @@ const contractABI = [
   "function _zkpay() public view returns (address)",
   "function _queryHash() public view returns (bytes32)",
   "function addTrustedRelayer(address relayer) external",
-  "function queryWithNative((bytes,uint8,tuple[],uint64,address,uint64,bytes,uint8)) external payable returns (bytes32)"
+  "struct QueryData { bytes query; uint8 queryType; tuple[] queryParameters; uint64 timeout; address callbackClientContractAddress; uint64 callbackGasLimit; bytes callbackData; uint8 zkVerficiation }",
+  "function queryWithNative(tuple) external payable returns (bytes32)"
 ];
 
 const ContractInteraction: React.FC = () => {
