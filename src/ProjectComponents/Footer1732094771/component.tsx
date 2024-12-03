@@ -70,7 +70,8 @@ const ContractInteraction: React.FC = () => {
       setQueryHash(newQueryHash);
       setErrorMessage('Query sent successfully!');
     } catch (error) {
-      setErrorMessage((error as Error).message);
+      console.error('Full error:', error);
+      setErrorMessage(error?.message || 'Unknown error');
     }
   };
 
