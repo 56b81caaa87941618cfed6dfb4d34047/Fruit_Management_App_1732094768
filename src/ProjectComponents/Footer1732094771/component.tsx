@@ -9,7 +9,8 @@ const contractABI = [
   "function cancelQuery(bytes32 queryHash) external",
   "function _owner() public view returns (address)",
   "function _zkpay() public view returns (address)",
-  "function _queryHash() public view returns (bytes32)"
+  "function _queryHash() public view returns (bytes32)",
+  "function addTrustedRelayer(address relayer) external"
 ];
 
 const ContractInteraction: React.FC = () => {
