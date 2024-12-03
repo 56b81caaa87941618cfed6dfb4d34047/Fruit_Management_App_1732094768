@@ -59,7 +59,10 @@ const ContractInteraction: React.FC = () => {
       setErrorMessage((error as Error).message);
     }
   };
-
+  const setupRelayer = async () => {
+    const zkPayContract = new ethers.Contract(zkPayAddress, zkPayABI, signer);
+    await zkPayContract.addTrustedRelayer(yourRelayerAddress);
+  };
   const handleQueryZKPay = async () => {
     try {
       await checkNetwork();
@@ -79,7 +82,7 @@ const ContractInteraction: React.FC = () => {
       });
   
       const tx = await contract.queryZKPay({ 
-        value: ethers.utils.parseEther("0.01"), // Fixed small amount for testing
+        value: ethers.utils.parseEther("0.1"), // Fixed small amount for testing
         gasLimit: 1000000
       });
       await tx.wait();
