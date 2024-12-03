@@ -178,5 +178,13 @@
         "source": "smart_contract_assistant",
         "content": "It seems there is an issue with generating the staking contract. Let's try modifying the description further or provide more details. How would you like to proceed?",
         "metadata": {}
+    },
+    {
+        "id": "6fe24f32-e4bb-4530-9b26-77863c0911a5",
+        "timestamp": "2024-12-03T07:39:33.647163Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a new staking contract again",
+        "metadata": {}
     }
 ]
