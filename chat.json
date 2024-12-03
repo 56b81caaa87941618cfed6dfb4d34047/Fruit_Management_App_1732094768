@@ -24,5 +24,15 @@
         "source": "base_assistant",
         "content": "I see you provided a smart contract address. Which component do you wish to interact with this smart contract, and on which chain? The supported chains are Ethereum, Holesky, Polygon, and zkSyncEra.",
         "metadata": {}
+    },
+    {
+        "id": "dca358f1-f958-416b-b450-8f36a0a04e0d",
+        "timestamp": "2024-12-03T10:42:07.120518Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "I want a sc frontend for that, it is in holesky",
+        "metadata": {
+            "component_id": "Header1732094771"
+        }
     }
 ]
