@@ -99,7 +99,16 @@ const ContractInteraction: React.FC = () => {
         zkVerficiation: 0
       };
   
-      const tx = await contract.queryWithNative(queryData, { 
+      const tx = await contract.queryWithNative([
+        queryData.query,
+        queryData.queryType,
+        queryData.queryParameters,
+        queryData.timeout,
+        queryData.callbackClientContractAddress,
+        queryData.callbackGasLimit,
+        queryData.callbackData,
+        queryData.zkVerficiation
+      ], { 
         value: ethers.utils.parseEther("0.1"),
         gasLimit: 1000000
       });
