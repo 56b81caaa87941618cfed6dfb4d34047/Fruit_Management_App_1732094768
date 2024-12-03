@@ -61,22 +61,23 @@ const ContractInteraction: React.FC = () => {
     }
   };
   const setupRelayer = async () => {
-    try {
-      await checkNetwork();
-      const contract = await getContract();
-      const signer = await provider.getSigner();
-      const callerAddress = await signer.getAddress();
-      
-      console.log('Setup attempt:', {
-        contract: contract.address,
-        caller: callerAddress
-      });
+   try {
+     await checkNetwork();
+     const contract = await getContract();
+     const provider = new ethers.providers.Web3Provider(window.ethereum);
+     const signer = provider.getSigner();
+     const callerAddress = await signer.getAddress();
+     
+     console.log('Setup attempt:', {
+       contract: contract.address,
+       caller: callerAddress
+     });
   
-      const tx = await contract.addTrustedRelayer(callerAddress);
-      await tx.wait();
-    } catch (error: any) {
-      console.error('Detailed error:', error);
-    }
+     const tx = await contract.addTrustedRelayer(callerAddress);
+     await tx.wait();
+   } catch (error) {
+     console.error('Detailed error:', error);
+   }
   };
   const handleQueryZKPay = async () => {
     try {
