@@ -149,5 +149,13 @@
         "source": "smart_contract_assistant",
         "content": "It appears there's an issue with generating a compilable smart contract for minting tokens. Could you please provide more specific details on what you need? For example, do you need an ERC-20 or ERC-721 (NFT) contract, and any other functionalities you want included?",
         "metadata": {}
+    },
+    {
+        "id": "af27461c-0d9c-4068-a80d-93cd6f478704",
+        "timestamp": "2024-12-03T11:08:56.130157Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a smart contract for minting",
+        "metadata": {}
     }
 ]
