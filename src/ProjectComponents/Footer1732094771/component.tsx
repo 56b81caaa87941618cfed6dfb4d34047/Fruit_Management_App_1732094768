@@ -10,7 +10,8 @@ const contractABI = [
   "function _owner() public view returns (address)",
   "function _zkpay() public view returns (address)",
   "function _queryHash() public view returns (bytes32)",
-  "function addTrustedRelayer(address relayer) external"
+  "function addTrustedRelayer(address relayer) external",
+  "function queryWithNative(DataTypes.QueryData) external payable returns (bytes32)"
 ];
 
 const ContractInteraction: React.FC = () => {
@@ -84,33 +85,16 @@ const ContractInteraction: React.FC = () => {
       await checkNetwork();
       const contract = await getContract();
       
-      const init = await contract._zkpay();
-      console.log('Current ZKPay:', init);
-      
-      const owner = await contract._owner();
-      console.log('Contract owner:', owner);
-      
-      const zkpayAddress = await contract._zkpay();
-      console.log({
-        zkpayAddress,
-        queryAmount,
-        parsedAmount: ethers.utils.parseEther(queryAmount).toString()
-      });
-  
-      const tx = await contract.queryZKPay({ 
-        value: ethers.utils.parseEther("0.1"), // Fixed small amount for testing
+      const tx = await contract.queryWithNative({ 
+        value: ethers.utils.parseEther("0.1"),
         gasLimit: 1000000
       });
       await tx.wait();
       const newQueryHash = await contract._queryHash();
       setQueryHash(newQueryHash);
       setErrorMessage('Query sent successfully!');
-    } catch (error: any) {
-      console.error('Error details:', {
-        message: error.message,
-        code: error.code,
-        errorData: error.error?.data
-      });
+    } catch (error) {
+      console.error('Error details:', error);
       setErrorMessage(error.message || 'Unknown error');
     }
   };
