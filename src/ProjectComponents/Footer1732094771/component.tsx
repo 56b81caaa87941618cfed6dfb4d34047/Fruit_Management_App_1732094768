@@ -10,9 +10,7 @@ const contractABI = [
   "function _owner() public view returns (address)",
   "function _zkpay() public view returns (address)",
   "function _queryHash() public view returns (bytes32)",
-  "function addTrustedRelayer(address relayer) external",
-  "struct QueryData { bytes query; uint8 queryType; tuple[] queryParameters; uint64 timeout; address callbackClientContractAddress; uint64 callbackGasLimit; bytes callbackData; uint8 zkVerficiation }",
-  "function queryWithNative((bytes query, uint8 queryType, tuple[] queryParameters, uint64 timeout, address callbackClientContractAddress, uint64 callbackGasLimit, bytes callbackData, uint8 zkVerficiation)) external payable returns (bytes32)"
+  "function addTrustedRelayer(address relayer) external"
 ];
 
 const ContractInteraction: React.FC = () => {
@@ -99,22 +97,10 @@ const ContractInteraction: React.FC = () => {
         zkVerficiation: 0
       };
   
-      const tx = await contract.queryWithNative(
-        [
-          queryData.query,
-          queryData.queryType,
-          queryData.queryParameters,
-          queryData.timeout,
-          queryData.callbackClientContractAddress,
-          queryData.callbackGasLimit,
-          queryData.callbackData,
-          queryData.zkVerficiation
-        ], 
-        { 
-          value: ethers.utils.parseEther("0.1"),
-          gasLimit: 1000000
-        }
-      );
+      const tx = await contract.queryZKPay({ 
+        value: ethers.utils.parseEther("0.1"),
+        gasLimit: 1000000
+      });
       await tx.wait();
       const newQueryHash = await contract._queryHash();
       setQueryHash(newQueryHash);
