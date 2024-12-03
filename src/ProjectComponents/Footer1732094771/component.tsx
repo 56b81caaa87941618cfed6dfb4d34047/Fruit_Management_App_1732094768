@@ -69,38 +69,49 @@ const ContractInteraction: React.FC = () => {
       const contract = await getContract();
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
-      
-      // Add this to check if we're calling from ZKPay contract or AirdropClient
-      console.log('Contract being called:', {
-        address: contract.address,
-        ABI: contract.interface.fragments.map(f => f.name)
-      });
-      
+       
       const owner = await contract._owner();
       const caller = await signer.getAddress();
       console.log('Access check:', {
-        owner,
-        caller,
-        isOwner: owner.toLowerCase() === caller.toLowerCase()
-      });
+       owner,
+       caller, 
+       isOwner: owner.toLowerCase() === caller.toLowerCase()
+     });
   
-      if (owner.toLowerCase() !== caller.toLowerCase()) {
-        throw new Error('Must be owner to add trusted relayer');
-      }
-      
-      const tx = await contract.addTrustedRelayer(caller, {
-        gasLimit: 1000000
-      });
-      await tx.wait();
-    } catch (error: any) {
-      console.error('Setup error:', {
-        code: error?.code,
-        message: error?.message,
-        data: error?.error?.data,
-        reason: error?.error?.reason,
-        stack: error?.stack
-      });
-    }
+     if (owner.toLowerCase() !== caller.toLowerCase()) {
+       throw new Error('Must be owner to add trusted relayer');
+     }
+  
+     // First set accepted asset
+     console.log('Setting accepted asset...');
+     const setAssetTx = await contract.setAcceptedAsset(
+       ethers.constants.AddressZero,
+       true,
+       true, 
+       {
+         gasLimit: 1000000
+       }
+     );
+     await setAssetTx.wait();
+     console.log('Asset acceptance set');
+  
+     // Then add trusted relayer
+     console.log('Adding trusted relayer...');
+     const tx = await contract.addTrustedRelayer(caller, {
+       gasLimit: 1000000
+     });
+     await tx.wait();
+     console.log('Relayer added');
+  
+   } catch (error: any) {
+     console.error('Setup error:', {
+       code: error?.code,
+       message: error?.message,
+       data: error?.error?.data,
+       reason: error?.error?.reason,
+       stack: error?.stack
+     });
+   }
   };
 
   const handleQueryZKPay = async () => {
