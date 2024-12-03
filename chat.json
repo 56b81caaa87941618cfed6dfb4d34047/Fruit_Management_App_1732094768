@@ -108,5 +108,20 @@
         "metadata": {
             "tool_call_id": "call_WIlM6ix9rke8JO5biruINoPz"
         }
+    },
+    {
+        "id": "d6fb1651-31d1-4647-be1d-80302b1baa94",
+        "timestamp": "2024-12-03T11:06:53.772330Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_uxLIOcK8TodrmcKCC1WTnHBh",
+            "function": {
+                "arguments": "{\"contract_id\":\"MintingContract\",\"description\":\"This smart contract should be able to mint new tokens on request\",\"acknowledgement_message\":\"Okay, I'm generating the smart contract for minting tokens...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
