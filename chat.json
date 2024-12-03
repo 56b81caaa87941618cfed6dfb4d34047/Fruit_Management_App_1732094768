@@ -284,5 +284,20 @@
         "source": "web_client",
         "content": "yes",
         "metadata": {}
+    },
+    {
+        "id": "73d340db-4064-4740-a2d7-3fe665926d45",
+        "timestamp": "2024-12-03T07:43:25.541203Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_xUjRu9rotnznT83mkuQuoac7",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"frontend_description\":\"A frontend component to interact with the staking contract for staking tokens, withdrawing staked tokens, and claiming rewards.\",\"acknowledgement_message\":\"Okay, I'm deploying the contract...\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
     }
 ]
