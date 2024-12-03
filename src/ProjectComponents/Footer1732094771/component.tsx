@@ -64,8 +64,14 @@ const ContractInteraction: React.FC = () => {
     try {
       await checkNetwork();
       const contract = await getContract();
-      const zkpayAddress = await contract._zkpay();
       
+      const init = await contract._zkpay();
+      console.log('Current ZKPay:', init);
+      
+      const owner = await contract._owner();
+      console.log('Contract owner:', owner);
+      
+      const zkpayAddress = await contract._zkpay();
       console.log({
         zkpayAddress,
         queryAmount,
@@ -73,7 +79,7 @@ const ContractInteraction: React.FC = () => {
       });
   
       const tx = await contract.queryZKPay({ 
-        value: ethers.utils.parseEther(queryAmount),
+        value: ethers.utils.parseEther("0.01"), // Fixed small amount for testing
         gasLimit: 1000000
       });
       await tx.wait();
