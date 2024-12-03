@@ -64,13 +64,18 @@ const ContractInteraction: React.FC = () => {
     try {
       await checkNetwork();
       const contract = await getContract();
-      const zkpayAddress = await contract._zkpay();
-      const tx = await contract.addTrustedRelayer(zkpayAddress);
+      const signer = await provider.getSigner();
+      const callerAddress = await signer.getAddress();
+      
+      console.log('Setup attempt:', {
+        contract: contract.address,
+        caller: callerAddress
+      });
+  
+      const tx = await contract.addTrustedRelayer(callerAddress);
       await tx.wait();
-      setErrorMessage('Relayer setup successful!');
-    } catch (error) {
-      console.error('Setup error:', error);
-      setErrorMessage(error.message || 'Relayer setup failed');
+    } catch (error: any) {
+      console.error('Detailed error:', error);
     }
   };
   const handleQueryZKPay = async () => {
