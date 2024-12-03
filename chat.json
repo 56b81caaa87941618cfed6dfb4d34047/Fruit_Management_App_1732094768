@@ -276,5 +276,13 @@
         "source": "smart_contract_assistant",
         "content": "Would you like to deploy this staking contract now?",
         "metadata": {}
+    },
+    {
+        "id": "6fee8bf7-41ba-4d14-978d-12e9b26c4da1",
+        "timestamp": "2024-12-03T07:43:21.615467Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "yes",
+        "metadata": {}
     }
 ]
