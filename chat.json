@@ -206,5 +206,20 @@
         "source": "web_client",
         "content": "yes",
         "metadata": {}
+    },
+    {
+        "id": "b8ac9f38-b6e6-4833-bf57-35f1eef6623d",
+        "timestamp": "2024-12-03T11:09:26.103815Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_3m6VQw4fjP93vAdaXkrO95Gu",
+            "function": {
+                "arguments": "{\"contract_id\":\"MintingContract\",\"frontend_description\":\"This will allow users to mint new tokens on request.\",\"acknowledgement_message\":\"Okay, I'm deploying the contract...\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
     }
 ]
