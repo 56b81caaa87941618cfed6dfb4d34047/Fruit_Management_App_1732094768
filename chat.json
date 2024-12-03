@@ -83,5 +83,20 @@
         "source": "web_client",
         "content": "generate a smart contract for minting",
         "metadata": {}
+    },
+    {
+        "id": "de7c9703-797f-4a14-8c5d-8633c3487586",
+        "timestamp": "2024-12-03T11:06:47.493992Z",
+        "role": "tool_call",
+        "source": "base_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_WIlM6ix9rke8JO5biruINoPz",
+            "function": {
+                "arguments": "{}",
+                "name": "TransferToSmartContractAssistant"
+            },
+            "type": "function"
+        }
     }
 ]
