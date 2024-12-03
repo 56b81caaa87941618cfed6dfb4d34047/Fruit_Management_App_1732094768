@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ethers } from 'ethers';
 
@@ -23,7 +22,7 @@ const ContractInteraction: React.FC = () => {
   const [errorMessage, setErrorMessage] = React.useState<string>('');
 
   const contractAddress = '0xe78890E5b555e3FE258Af993A1ECd64ff523815B';
-  const chainId = 17000; // Holesky testnet
+  const chainId = 17000;
 
   const getContract = async () => {
     if (typeof window.ethereum !== 'undefined') {
@@ -58,80 +57,76 @@ const ContractInteraction: React.FC = () => {
       const tx = await contract.initialize(zkPayAddress);
       await tx.wait();
       setErrorMessage('Contract initialized successfully!');
-    } catch (error) {
-      setErrorMessage((error as Error).message);
+    } catch (error: any) {
+      console.error('Initialize error:', error);
+      setErrorMessage(error.message);
     }
   };
+
   const setupRelayer = async () => {
-   try {
-     await checkNetwork();
-     const contract = await getContract();
-     const provider = new ethers.providers.Web3Provider(window.ethereum);
-     const signer = provider.getSigner();
-     
-     console.log('Contract owner:', await contract._owner());
-     console.log('Current caller:', await signer.getAddress());
-    
-     const callerAddress = await signer.getAddress();
-     
-     console.log('Setup attempt:', {
-       contract: contract.address,
-       caller: callerAddress
-     });
-  
-     const tx = await contract.addTrustedRelayer(callerAddress, {
-        gasLimit: 1000000
-      });
-     await tx.wait();
-   } catch (error) {
-     console.error('Detailed error:', error);
-     console.log('Error response:', {
-      code: error?.code,
-      message: error?.message,
-      data: error?.error?.data,
-      reason: error?.error?.reason
-    });
-   }
-  };
-  const handleQueryZKPay = async () => {
     try {
       await checkNetwork();
       const contract = await getContract();
-      const acceptedAsset = await contract.getAcceptedAssetMethod(ethers.constants.AddressZero);
-      console.log('Native token accepted?', acceptedAsset);
-      const owner = await contract._owner();
-      const trustedRelayer = await contract.isTrustedRelayer(owner);
-      console.log('Is trusted relayer?', trustedRelayer);
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
       
-      const queryData = {
-        query: ethers.utils.toUtf8Bytes(
-          "SELECT FROM_ADDRESS, COUNT(*) AS TRANSACTION_COUNT FROM ETHEREUM.TRANSACTIONS WHERE TO_ADDRESS = '0xae7ab96520de3a18e5e111b5eaab095312d7fe84' AND FROM_ADDRESS != '0x0000000000000000000000000000000000000000' GROUP BY FROM_ADDRESS ORDER BY TRANSACTION_COUNT DESC LIMIT 40;"
-        ),
-        queryType: 0,
-        queryParameters: [],
-        timeout: Math.floor(Date.now()/1000) + 1800,
-        callbackClientContractAddress: contract.address,
-        callbackGasLimit: 400000,
-        callbackData: "0x",
-        zkVerficiation: 0
-      };
-  
-      const tx = await contract.queryZKPay({ 
-        value: ethers.utils.parseEther("0.1"),
+      const owner = await contract._owner();
+      const caller = await signer.getAddress();
+      console.log('Contract owner:', owner);
+      console.log('Current caller:', caller);
+      
+      console.log('Setup attempt:', {
+        contract: contract.address,
+        caller
+      });
+
+      const tx = await contract.addTrustedRelayer(caller, {
         gasLimit: 1000000
       });
       await tx.wait();
-      const newQueryHash = await contract._queryHash();
-      setQueryHash(newQueryHash);
-      setErrorMessage('Query sent successfully!');
+      setErrorMessage('Relayer setup successful!');
     } catch (error: any) {
-      console.log('Query error:', {
+      console.error('Setup error:', {
         code: error?.code,
         message: error?.message,
         data: error?.error?.data,
         reason: error?.error?.reason
       });
-};
+      setErrorMessage(error.message);
+    }
+  };
+
+  const handleQueryZKPay = async () => {
+    try {
+      await checkNetwork();
+      const contract = await getContract();
+      
+      const acceptedAsset = await contract.getAcceptedAssetMethod(ethers.constants.AddressZero);
+      console.log('Native token accepted?', acceptedAsset);
+      
+      const owner = await contract._owner();
+      const trustedRelayer = await contract.isTrustedRelayer(owner);
+      console.log('Is trusted relayer?', trustedRelayer);
+      
+      const tx = await contract.queryZKPay({ 
+        value: ethers.utils.parseEther("0.1"),
+        gasLimit: 1000000
+      });
+      await tx.wait();
+      
+      const newQueryHash = await contract._queryHash();
+      setQueryHash(newQueryHash);
+      setErrorMessage('Query sent successfully!');
+    } catch (error: any) {
+      console.error('Query error:', {
+        code: error?.code,
+        message: error?.message,
+        data: error?.error?.data,
+        reason: error?.error?.reason
+      });
+      setErrorMessage(error.message);
+    }
+  };
 
   const handleWithdraw = async () => {
     try {
@@ -140,8 +135,9 @@ const ContractInteraction: React.FC = () => {
       const tx = await contract.withdraw();
       await tx.wait();
       setErrorMessage('Withdrawal successful!');
-    } catch (error) {
-      setErrorMessage((error as Error).message);
+    } catch (error: any) {
+      console.error('Withdraw error:', error);
+      setErrorMessage(error.message);
     }
   };
 
@@ -152,8 +148,9 @@ const ContractInteraction: React.FC = () => {
       const tx = await contract.cancelQuery(queryHash);
       await tx.wait();
       setErrorMessage('Query cancelled successfully!');
-    } catch (error) {
-      setErrorMessage((error as Error).message);
+    } catch (error: any) {
+      console.error('Cancel error:', error);
+      setErrorMessage(error.message);
     }
   };
 
@@ -165,8 +162,9 @@ const ContractInteraction: React.FC = () => {
         const fetchedZkPayAddress = await contract._zkpay();
         setOwnerAddress(fetchedOwnerAddress);
         setZkPayAddress(fetchedZkPayAddress);
-      } catch (error) {
-        setErrorMessage((error as Error).message);
+      } catch (error: any) {
+        console.error('Fetch error:', error);
+        setErrorMessage(error.message);
       }
     };
     fetchContractInfo();
