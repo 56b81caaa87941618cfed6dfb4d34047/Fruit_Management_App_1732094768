@@ -70,29 +70,36 @@ const ContractInteraction: React.FC = () => {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       
+      // Add this to check if we're calling from ZKPay contract or AirdropClient
+      console.log('Contract being called:', {
+        address: contract.address,
+        ABI: contract.interface.fragments.map(f => f.name)
+      });
+      
       const owner = await contract._owner();
       const caller = await signer.getAddress();
-      console.log('Contract owner:', owner);
-      console.log('Current caller:', caller);
-      
-      console.log('Setup attempt:', {
-        contract: contract.address,
-        caller
+      console.log('Access check:', {
+        owner,
+        caller,
+        isOwner: owner.toLowerCase() === caller.toLowerCase()
       });
-
+  
+      if (owner.toLowerCase() !== caller.toLowerCase()) {
+        throw new Error('Must be owner to add trusted relayer');
+      }
+      
       const tx = await contract.addTrustedRelayer(caller, {
         gasLimit: 1000000
       });
       await tx.wait();
-      setErrorMessage('Relayer setup successful!');
     } catch (error: any) {
       console.error('Setup error:', {
         code: error?.code,
         message: error?.message,
         data: error?.error?.data,
-        reason: error?.error?.reason
+        reason: error?.error?.reason,
+        stack: error?.stack
       });
-      setErrorMessage(error.message);
     }
   };
 
