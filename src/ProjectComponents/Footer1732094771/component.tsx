@@ -86,7 +86,9 @@ const ContractInteraction: React.FC = () => {
       const contract = await getContract();
       
       const queryData = {
-        query: ethers.utils.toUtf8Bytes("SELECT FROM_ADDRESS, COUNT(*) AS TRANSACTION_COUNT FROM ETHEREUM.TRANSACTIONS WHERE TO_ADDRESS = '0xae7ab96520de3a18e5e111b5eaab095312d7fe84' AND FROM_ADDRESS != '0x0000000000000000000000000000000000000000' GROUP BY FROM_ADDRESS ORDER BY TRANSACTION_COUNT DESC LIMIT 40;"),
+        query: ethers.utils.toUtf8Bytes(
+          "SELECT FROM_ADDRESS, COUNT(*) AS TRANSACTION_COUNT FROM ETHEREUM.TRANSACTIONS WHERE TO_ADDRESS = '0xae7ab96520de3a18e5e111b5eaab095312d7fe84' AND FROM_ADDRESS != '0x0000000000000000000000000000000000000000' GROUP BY FROM_ADDRESS ORDER BY TRANSACTION_COUNT DESC LIMIT 40;"
+        ),
         queryType: 0,
         queryParameters: [],
         timeout: Math.floor(Date.now()/1000) + 1800,
