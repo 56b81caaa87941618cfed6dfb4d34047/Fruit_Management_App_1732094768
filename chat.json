@@ -227,5 +227,13 @@
         "source": "smart_contract_assistant",
         "content": "I am unable to generate a staking contract at this moment due to repeated failures. You may want to provide a different description or instructions. How would you like to proceed?",
         "metadata": {}
+    },
+    {
+        "id": "ba6ac0e2-29bd-4d6b-b129-c8575e905a6d",
+        "timestamp": "2024-12-03T07:42:25.286375Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a new staking contract again",
+        "metadata": {}
     }
 ]
