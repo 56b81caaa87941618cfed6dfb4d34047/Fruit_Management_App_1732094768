@@ -73,9 +73,9 @@ const ContractInteraction: React.FC = () => {
        caller: callerAddress
      });
   
-     const tx = await contract.addTrustedRelayer(callerAddress,  gasLimit: {
-      gasLimit: 1000000
-    });
+     const tx = await contract.addTrustedRelayer(callerAddress, {
+        gasLimit: 1000000
+      });
      await tx.wait();
    } catch (error) {
      console.error('Detailed error:', error);
