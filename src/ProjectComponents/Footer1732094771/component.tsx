@@ -64,7 +64,7 @@ const ContractInteraction: React.FC = () => {
     try {
       await checkNetwork();
       const contract = await getContract();
-      const tx = await contract.queryZKPay({ value: ethers.utils.parseEther(queryAmount), gasLimit: 500000 });
+      const tx = await contract.queryZKPay({ value: ethers.utils.parseEther(queryAmount), gasLimit: 5000000 });
       await tx.wait();
       const newQueryHash = await contract._queryHash();
       setQueryHash(newQueryHash);
