@@ -11,7 +11,8 @@ const contractABI = [
   "function _queryHash() public view returns (bytes32)",
   "function addTrustedRelayer(address relayer) external",
   "function getAcceptedAssetMethod(address) external view returns (tuple(bool,bool))",
-  "function isTrustedRelayer(address) external view returns (bool)"
+  "function isTrustedRelayer(address) external view returns (bool)",
+  "function setAcceptedAsset(address,bool,bool) external"
 ];
 
 const ContractInteraction: React.FC = () => {
