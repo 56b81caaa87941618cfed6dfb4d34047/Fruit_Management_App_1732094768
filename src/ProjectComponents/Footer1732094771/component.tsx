@@ -101,7 +101,8 @@ const ContractInteraction: React.FC = () => {
       await checkNetwork();
       const contract = await getContract();
       
-
+      const acceptedAsset = await contract.getAcceptedAssetMethod(ethers.constants.AddressZero);
+      console.log('Native token accepted?', acceptedAsset);
       
       const owner = await contract._owner();
       const trustedRelayer = await contract.isTrustedRelayer(owner);
