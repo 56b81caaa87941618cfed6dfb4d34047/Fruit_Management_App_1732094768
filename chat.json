@@ -385,5 +385,15 @@
         "source": "smart_contract_assistant",
         "content": "Currently, deployment is only supported to Holesky and Sepolia testnets. Please choose one of these testnets.",
         "metadata": {}
+    },
+    {
+        "id": "93519a11-e7f5-44fb-8d49-40a196df3a11",
+        "timestamp": "2024-12-05T10:58:29.748112Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "do it in sepolia",
+        "metadata": {
+            "component_id": "Footer1732094771"
+        }
     }
 ]
