@@ -527,5 +527,20 @@
         "source": "web_client",
         "content": "exactly",
         "metadata": {}
+    },
+    {
+        "id": "a1423b26-4cd2-46a9-b7b5-229ab974a5c9",
+        "timestamp": "2024-12-05T11:14:38.806562Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_feO5Vf4QtjS21yWadbcRpehU",
+            "function": {
+                "arguments": "{\"contract_id\":\"NewStakingContract\",\"description\":\"Create a smart contract that allows users to stake their tokens to earn rewards.\",\"acknowledgement_message\":\"Okay, I'm generating the new staking contract...\"}",
+                "name": "WriteSmartContract"
+            },
+            "type": "function"
+        }
     }
 ]
