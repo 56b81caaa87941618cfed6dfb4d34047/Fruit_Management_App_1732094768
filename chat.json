@@ -568,5 +568,54 @@
         "source": "smart_contract_assistant",
         "content": "I've created the NewStakingContract for staking tokens to earn rewards. Would you like to deploy this new contract now?",
         "metadata": {}
+    },
+    {
+        "id": "41cc1434-58e0-4438-b067-f8e6bc0d6fa6",
+        "timestamp": "2024-12-05T11:16:26.359943Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "deploy",
+        "metadata": {}
+    },
+    {
+        "id": "e81b8841-bf77-43a6-8867-6620d5aff2df",
+        "timestamp": "2024-12-05T11:16:29.723614Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_ADO0LMc7AZBQzJ5Uj8YiQy4H",
+            "function": {
+                "arguments": "{\"contract_id\":\"NewStakingContract\",\"frontend_description\":\"This will allow users to stake tokens and earn rewards.\",\"acknowledgement_message\":\"Okay, I'm deploying the contract...\",\"chain_id\":\"HOLESKY\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
+    },
+    {
+        "id": "6b576813-cb0d-46f3-98e4-60d6c6a453d5",
+        "timestamp": "2024-12-05T11:16:29.805585Z",
+        "role": "assistant",
+        "source": "tool:DeployAndGenerateFrontend",
+        "content": "Okay, I'm deploying the contract...",
+        "metadata": {}
+    },
+    {
+        "id": "fec0849b-5b67-4e9f-acec-fdfcc31f1514",
+        "timestamp": "2024-12-05T11:17:06.401338Z",
+        "role": "tool_result",
+        "source": "DeployAndGenerateFrontend",
+        "content": "Success: deployed contract to 0x9cFCb46D64024546114A41c512f3B43891656785 on Holesky (Ethereum testnet)",
+        "metadata": {
+            "tool_call_id": "call_ADO0LMc7AZBQzJ5Uj8YiQy4H"
+        }
+    },
+    {
+        "id": "198b0336-0b68-4aa7-8468-fc17c899b491",
+        "timestamp": "2024-12-05T11:17:07.849090Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The NewStakingContract has been successfully deployed on Holesky. You now have a frontend allowing users to stake tokens and earn rewards.\n\nWhat would you like to do next?",
+        "metadata": {}
     }
 ]
