@@ -617,5 +617,54 @@
         "source": "smart_contract_assistant",
         "content": "The NewStakingContract has been successfully deployed on Holesky. You now have a frontend allowing users to stake tokens and earn rewards.\n\nWhat would you like to do next?",
         "metadata": {}
+    },
+    {
+        "id": "91496efb-2f9b-48e2-af16-40a6221654dd",
+        "timestamp": "2024-12-05T11:17:33.577916Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "deploy in sepolia",
+        "metadata": {}
+    },
+    {
+        "id": "b8919bb7-bd47-41da-b80a-de76bd01c40f",
+        "timestamp": "2024-12-05T11:17:36.024506Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_xE0e3r9S8TIDKLJQARaoWM5m",
+            "function": {
+                "arguments": "{\"contract_id\":\"NewStakingContract\",\"frontend_description\":\"This will allow users to stake tokens and earn rewards on the Sepolia testnet.\",\"acknowledgement_message\":\"Okay, I'm deploying the contract...\",\"chain_id\":\"SEPOLIA\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
+    },
+    {
+        "id": "8f48c85f-b6a5-424c-8853-c4426c66916c",
+        "timestamp": "2024-12-05T11:17:36.111472Z",
+        "role": "assistant",
+        "source": "tool:DeployAndGenerateFrontend",
+        "content": "Okay, I'm deploying the contract...",
+        "metadata": {}
+    },
+    {
+        "id": "e37513cf-73bb-4c66-b961-2ed228d16bca",
+        "timestamp": "2024-12-05T11:18:19.940441Z",
+        "role": "tool_result",
+        "source": "DeployAndGenerateFrontend",
+        "content": "Success: deployed contract to 0x3625C6b6BE8584A4e5CB4bB904253bF958293839 on Sepolia (Ethereum testnet)",
+        "metadata": {
+            "tool_call_id": "call_xE0e3r9S8TIDKLJQARaoWM5m"
+        }
+    },
+    {
+        "id": "9fd506a2-6e6a-4213-8832-d1c635774677",
+        "timestamp": "2024-12-05T11:18:21.459417Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The NewStakingContract has been successfully deployed on Sepolia as well.\n\nWhat would you like to do next?",
+        "metadata": {}
     }
 ]
