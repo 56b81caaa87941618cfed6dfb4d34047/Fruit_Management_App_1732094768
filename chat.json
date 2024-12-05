@@ -625,5 +625,20 @@
         "source": "web_client",
         "content": "deploy in sepolia",
         "metadata": {}
+    },
+    {
+        "id": "b8919bb7-bd47-41da-b80a-de76bd01c40f",
+        "timestamp": "2024-12-05T11:17:36.024506Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_xE0e3r9S8TIDKLJQARaoWM5m",
+            "function": {
+                "arguments": "{\"contract_id\":\"NewStakingContract\",\"frontend_description\":\"This will allow users to stake tokens and earn rewards on the Sepolia testnet.\",\"acknowledgement_message\":\"Okay, I'm deploying the contract...\",\"chain_id\":\"SEPOLIA\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
     }
 ]
