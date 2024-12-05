@@ -298,5 +298,15 @@
         "source": "smart_contract_assistant",
         "content": "The frontend component for interacting with the minting contract has been successfully created and integrated with your Footer. What would you like to do next?",
         "metadata": {}
+    },
+    {
+        "id": "2a5a79cd-715b-4897-a79c-2b24a19728c6",
+        "timestamp": "2024-12-05T10:57:01.961965Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "generate a smart contract with staking capabilities",
+        "metadata": {
+            "component_id": "Footer1732094771"
+        }
     }
 ]
