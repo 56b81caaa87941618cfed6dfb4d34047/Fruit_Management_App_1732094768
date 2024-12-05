@@ -503,5 +503,21 @@
         "source": "smart_contract_assistant",
         "content": "The StakingContract has already been deployed on Holesky. Is there anything else you need assistance with?",
         "metadata": {}
+    },
+    {
+        "id": "8d4275b4-2fed-4af3-8df3-2f7126bbbe84",
+        "timestamp": "2024-12-05T11:14:15.249138Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "again",
+        "metadata": {}
+    },
+    {
+        "id": "0e927988-99e5-4a89-b958-1b1575c67031",
+        "timestamp": "2024-12-05T11:14:18.205887Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The StakingContract has already been used and cannot be redeployed again. You may need to create a new contract with a different ID if you want to redeploy. How would you like to proceed?",
+        "metadata": {}
     }
 ]
