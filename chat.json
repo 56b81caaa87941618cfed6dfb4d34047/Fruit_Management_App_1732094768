@@ -436,5 +436,15 @@
         "source": "smart_contract_assistant",
         "content": "The StakingContract has been successfully deployed on Sepolia. You now have a frontend allowing users to stake tokens and earn rewards.\n\nWhat would you like to do next?",
         "metadata": {}
+    },
+    {
+        "id": "acbc1469-abcb-492a-bbd7-e6112de8220d",
+        "timestamp": "2024-12-05T11:02:39.753348Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "deploy it in holesky now",
+        "metadata": {
+            "component_id": "Footer1732094771"
+        }
     }
 ]
