@@ -568,5 +568,13 @@
         "source": "smart_contract_assistant",
         "content": "I've created the NewStakingContract for staking tokens to earn rewards. Would you like to deploy this new contract now?",
         "metadata": {}
+    },
+    {
+        "id": "41cc1434-58e0-4438-b067-f8e6bc0d6fa6",
+        "timestamp": "2024-12-05T11:16:26.359943Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "deploy",
+        "metadata": {}
     }
 ]
