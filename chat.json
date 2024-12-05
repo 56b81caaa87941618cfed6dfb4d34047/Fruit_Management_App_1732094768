@@ -495,5 +495,13 @@
         "source": "web_client",
         "content": "deploy it in holesky now",
         "metadata": {}
+    },
+    {
+        "id": "cddbefd6-a07e-49b0-9f61-805fc5f8d437",
+        "timestamp": "2024-12-05T11:14:10.812813Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The StakingContract has already been deployed on Holesky. Is there anything else you need assistance with?",
+        "metadata": {}
     }
 ]
