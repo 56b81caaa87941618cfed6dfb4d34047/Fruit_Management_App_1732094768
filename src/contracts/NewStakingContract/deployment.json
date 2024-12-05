@@ -3,5 +3,10 @@
         "contract_address": "0x9cFCb46D64024546114A41c512f3B43891656785",
         "tx_hash": "0xce62992e395efa7eeb5ca3f647307e43017ac4be4222f0663993353507d74662",
         "block_number": 2876228
+    },
+    "SEPOLIA": {
+        "contract_address": "0x3625C6b6BE8584A4e5CB4bB904253bF958293839",
+        "tx_hash": "0x392cf3b471e0eec1d34d898c6c58118a0b7afa027e750196f4d3c3328e483451",
+        "block_number": 7216015
     }
 }
