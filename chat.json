@@ -385,5 +385,56 @@
         "source": "smart_contract_assistant",
         "content": "Currently, deployment is only supported to Holesky and Sepolia testnets. Please choose one of these testnets.",
         "metadata": {}
+    },
+    {
+        "id": "93519a11-e7f5-44fb-8d49-40a196df3a11",
+        "timestamp": "2024-12-05T10:58:29.748112Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "do it in sepolia",
+        "metadata": {
+            "component_id": "Footer1732094771"
+        }
+    },
+    {
+        "id": "cef0a367-8855-4e5e-be95-8b0c0f8665ef",
+        "timestamp": "2024-12-05T10:58:32.904441Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_Uj6EdB78ZGMWiNQ7sm0n4jCr",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"frontend_description\":\"This will allow users to stake tokens and earn rewards.\",\"acknowledgement_message\":\"Okay, I'm deploying the contract...\",\"chain_id\":\"SEPOLIA\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
+    },
+    {
+        "id": "1d59dd3e-e6c1-4225-ab1f-4a0ad656b296",
+        "timestamp": "2024-12-05T10:58:32.986720Z",
+        "role": "assistant",
+        "source": "tool:DeployAndGenerateFrontend",
+        "content": "Okay, I'm deploying the contract...",
+        "metadata": {}
+    },
+    {
+        "id": "086b97d7-46b4-4e95-bbff-f65547ab7225",
+        "timestamp": "2024-12-05T10:59:07.052306Z",
+        "role": "tool_result",
+        "source": "DeployAndGenerateFrontend",
+        "content": "Success: deployed contract to 0x8C1A7643E58c6C031Fb597D20664C6Ad8F78397A on Sepolia (Ethereum testnet)",
+        "metadata": {
+            "tool_call_id": "call_Uj6EdB78ZGMWiNQ7sm0n4jCr"
+        }
+    },
+    {
+        "id": "8279ab86-9142-417c-8830-50632c6b3de8",
+        "timestamp": "2024-12-05T10:59:10.549164Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The StakingContract has been successfully deployed on Sepolia. You now have a frontend allowing users to stake tokens and earn rewards.\n\nWhat would you like to do next?",
+        "metadata": {}
     }
 ]
