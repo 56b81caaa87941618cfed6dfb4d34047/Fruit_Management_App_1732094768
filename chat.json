@@ -446,5 +446,20 @@
         "metadata": {
             "component_id": "Footer1732094771"
         }
+    },
+    {
+        "id": "1150c22c-21c8-48cd-aba7-c6f70a2f811c",
+        "timestamp": "2024-12-05T11:02:42.294329Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_0Ukl0AnVNPySYwdRCYhSXBkP",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"frontend_description\":\"This will allow users to stake tokens and earn rewards.\",\"acknowledgement_message\":\"Okay, I'm deploying the contract...\",\"chain_id\":\"HOLESKY\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
     }
 ]
