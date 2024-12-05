@@ -658,5 +658,13 @@
         "metadata": {
             "tool_call_id": "call_xE0e3r9S8TIDKLJQARaoWM5m"
         }
+    },
+    {
+        "id": "9fd506a2-6e6a-4213-8832-d1c635774677",
+        "timestamp": "2024-12-05T11:18:21.459417Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The NewStakingContract has been successfully deployed on Sepolia as well.\n\nWhat would you like to do next?",
+        "metadata": {}
     }
 ]
