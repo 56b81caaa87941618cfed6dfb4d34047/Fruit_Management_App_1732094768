@@ -349,5 +349,15 @@
         "source": "smart_contract_assistant",
         "content": "I've successfully created the StakingContract for staking tokens to earn rewards. Would you like to deploy this contract now?",
         "metadata": {}
+    },
+    {
+        "id": "b31ce7d6-7120-41bb-bb30-6faf5a73bd32",
+        "timestamp": "2024-12-05T10:58:11.953048Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "yes, in which chains can i do it?",
+        "metadata": {
+            "component_id": "Footer1732094771"
+        }
     }
 ]
