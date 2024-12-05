@@ -395,5 +395,20 @@
         "metadata": {
             "component_id": "Footer1732094771"
         }
+    },
+    {
+        "id": "cef0a367-8855-4e5e-be95-8b0c0f8665ef",
+        "timestamp": "2024-12-05T10:58:32.904441Z",
+        "role": "tool_call",
+        "source": "smart_contract_assistant",
+        "content": null,
+        "metadata": {
+            "id": "call_Uj6EdB78ZGMWiNQ7sm0n4jCr",
+            "function": {
+                "arguments": "{\"contract_id\":\"StakingContract\",\"frontend_description\":\"This will allow users to stake tokens and earn rewards.\",\"acknowledgement_message\":\"Okay, I'm deploying the contract...\",\"chain_id\":\"SEPOLIA\"}",
+                "name": "DeployAndGenerateFrontend"
+            },
+            "type": "function"
+        }
     }
 ]
