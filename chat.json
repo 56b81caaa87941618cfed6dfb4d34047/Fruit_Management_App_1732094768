@@ -487,5 +487,21 @@
         "source": "smart_contract_assistant",
         "content": "The StakingContract has been successfully deployed on Holesky as well.\n\nWhat would you like to do next?",
         "metadata": {}
+    },
+    {
+        "id": "5a005d73-6184-409c-a006-6668ff2005c6",
+        "timestamp": "2024-12-05T11:14:08.007880Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "deploy it in holesky now",
+        "metadata": {}
+    },
+    {
+        "id": "cddbefd6-a07e-49b0-9f61-805fc5f8d437",
+        "timestamp": "2024-12-05T11:14:10.812813Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "The StakingContract has already been deployed on Holesky. Is there anything else you need assistance with?",
+        "metadata": {}
     }
 ]
