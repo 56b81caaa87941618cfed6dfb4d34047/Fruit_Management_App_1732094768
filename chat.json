@@ -367,5 +367,23 @@
         "source": "smart_contract_assistant",
         "content": "You can deploy the contract to the following testnets: Holesky and Sepolia. Which one would you prefer? If you have no preference, I'll default to Sepolia.",
         "metadata": {}
+    },
+    {
+        "id": "c17f91e4-07e2-4768-9703-fea32c49a12f",
+        "timestamp": "2024-12-05T10:58:21.324247Z",
+        "role": "user",
+        "source": "web_client",
+        "content": "deploy in polygon",
+        "metadata": {
+            "component_id": "Footer1732094771"
+        }
+    },
+    {
+        "id": "e2926b4f-0054-4dd8-888b-8d130395ab7e",
+        "timestamp": "2024-12-05T10:58:23.318077Z",
+        "role": "assistant",
+        "source": "smart_contract_assistant",
+        "content": "Currently, deployment is only supported to Holesky and Sepolia testnets. Please choose one of these testnets.",
+        "metadata": {}
     }
 ]
